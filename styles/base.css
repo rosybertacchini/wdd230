@@ -1,0 +1,114 @@
+        
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Koh+Santepheap&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap");
+
+:root {
+  --header-background-color: lightblue;
+  --navarea-background-color: rgb(126, 188, 208);
+  --body-background-color: rgb(233, 247, 252);
+
+  --heading-font: "Sofia", sans-serif;
+  --paragraph-font: "Koh Santepheap", Helvetica, sans-serif;
+
+  --nav-link-color: #163384;
+  --nav-background-color: rgb(121, 138, 234);
+  --nav-hover-link-color: #ffffff;
+  --nav-hover-background-color: rgb(189, 229, 244);
+}
+
+
+
+body {
+  display: grid;
+  /* height: 100vh; */
+  grid-template: auto 1fr auto / repeat(20,1fr);
+  background-color: var(--body-background-color);
+  margin :0;
+}
+/* ------------------------------------- */
+header {
+  padding: 2rem;
+  grid-column: 6 / 16;
+  font-family: var(--heading-font);
+  background-color: var(--header-background-color);
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* ------------------------------------- */
+nav {
+  grid-column: 6 / 16;
+ 
+  text-align: center;
+  padding: 20px;
+  font-size: 3ex;
+}
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+a {
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* ------------------------------------- */
+main {
+  grid-column: 6 / 16;
+  text-align: center;
+}
+
+/* ------------------------------------- */
+footer {
+  grid-column: 6 / 16;
+
+  margin :0;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+section {
+  margin: 5px;
+}
+.card {
+  padding: 5px;
+  align-items: center;
+  font-family: var(--paragraph-font);
+  font-size: 2ex;
+}
+ul {
+  list-style-type: none;
+}
+#lastModified {
+  font-weight: bold;
+}
+
+#mexican-flag{
+  width: 80px;
+}
+
+#mypicture {
+  border-radius: 25px;
+  width: 120px;
+  border: 1px solid #163384;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+h3 {
+  background-color: var(--header-background-color);
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: "Amaranth";
+}
+h2 {
+  font-family: "Amaranth";
+}
+/* ----------------------------------------------------------------------------- 
