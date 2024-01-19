@@ -1,0 +1,17 @@
+
+/* smaller view */
+@media (max-width: 440px) {
+    nav{
+      font-size: 2.5ex;
+      justify-content: center;
+    }
+    .card {
+      font-size: 1.8ex;
+    }
+    h2 {
+      font-size: 2ex;
+    }
+    h1 {
+      font-size: 2.5ex;
+    }
+  }

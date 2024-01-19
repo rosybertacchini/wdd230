@@ -1,0 +1,16 @@
+
+/* larger view */
+@media (min-width: 780px) {
+    nav ul{
+      display: flex;
+      justify-content: space-evenly ;
+      font-size: 3ex;
+    }
+
+
+    /* no funciona */
+    /* main {
+        grid-column: 2;
+      } */
+    
+  }
