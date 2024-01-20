@@ -58,6 +58,9 @@ nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+  border-radius: 50px;
+  
+}
 }
 nav {
 	margin: 0 auto;
