@@ -127,7 +127,6 @@ footer {
   }
   #lastModified {
 	font-weight: bold;
-	font-size: .8em;
   }
   #mexican-flag{
 	width: 50%;
@@ -148,7 +147,9 @@ footer {
 	align-items: center;
   
   }
-
+  #lastModified {
+	font-weight: bold;
+  }
   #mexican-flag{
 	width: 80px;
   }
@@ -173,12 +174,12 @@ footer {
   }
   h2 {
 	font-family: "Amaranth";
-	font-size: 1em;
   }
   #map{
 	text-align: center;
 	height : 100px ;
 	width :100% ;
+	border: px;
 	border-color: var(--header-background-color);
   }
  #mapdiv {
@@ -214,6 +215,11 @@ footer {
 		display: flex;
 
 	}
+	
+	.stuff {
+		margin: 1rem auto;
+	}
+
 
 	/* my code */
 	 .navigation a {
@@ -268,6 +274,7 @@ footer {
 		text-align: center;
 		height : 250px ;
 		width :50% ;
+		border: px;
 		border-color: var(--header-background-color);
 	}
 	#mapdiv {
@@ -280,10 +287,7 @@ footer {
 		font-size: 2ex;
 	  }
 
-	  #lastModified {
-		font-weight: bold;
-		font-size: 1em;
-	  }
+
 
 
 }
