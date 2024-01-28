@@ -44,7 +44,6 @@ header {
 	width: 80px;
 	border: 1px solid #163384;
 	box-shadow: 5px 5px 10px #6f7364;
-
 	margin :0;
 	padding: 0;
   }
@@ -57,8 +56,8 @@ h1 {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000000;
+	background-color:  var(--nav-hover-background-color);
+	color: #fff;
   	position: absolute;
   	top: 0;
   	right: 0;
@@ -73,41 +72,35 @@ h1 {
 }
 .navigation {
 	grid-column: 6 / 16;
-	margin: 0 auto;
 	text-align: center;
 	padding: 0px;
-	flex-direction: column;
+	/* flex-direction: column; */
 	list-style: none;
-	background-color: var(--body-background-color);
-	color: var(--nav-hover-link-color);
-   
-  
-  }
+	background-color: var(--nav-hover-background-color);
+	color: #fff;
+}
+  .navigation li {
+	padding: .3rem;
+}
 
 .navigation ul {
 	display: none;
-	padding: 1rem;
+	padding: .5rem;
 	text-align: center;
 	text-decoration: none;
-	color: var(--nav-hover-link-color);
 	list-style-type: none;
-	font-size: 1rem;;
-	
+	font-size: 1rem;
+	/* color: #fff; */
 }
-
-.navigation a:link,
-.navigation a:visited {
-  color: var(--nav-link-color);
-}
-.navigation a:hover {
-	color: var(--nav-hover-color);
-	background-color: var(--nav-hover-background-color);
-	border-radius: 50px;
+.navigation a {
+	color: #fff;
+    padding: 1rem;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open ul {
 	display: block;
+
 }
 
 
@@ -139,7 +132,7 @@ footer {
 	text-align: center;
   }
   /* ------------------------------------- */
-  footer {
+  /* footer {
 	grid-column: 6 / 16;
   
 	margin :0;
@@ -147,7 +140,7 @@ footer {
 	justify-content: space-around;
 	align-items: center;
   
-  }
+  } */
 
   #mexican-flag{
 	width: 80px;
@@ -274,6 +267,7 @@ footer {
 		text-align: center;
 	}
 	.card {
+	
 		padding: 5px;
 		text-align:left;
 		font-family: var(--paragraph-font);
@@ -285,5 +279,66 @@ footer {
 		font-size: 1em;
 	  }
 
+
+
+
+	  /* 2 columns in main */
+	  section-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px; /* Adjust the gap according to your design */
+      }
+
+	 
+
+      .card {
+        width: 100%; /* Optional: Adjust the width based on your design */
+      }
+
+
+/*    navegacion */
+	  .navigation {
+		grid-column: 6 / 16;
+		margin: 0 auto;
+		text-align: center;
+		padding: 0px;
+		flex-direction: column;
+		list-style: none;
+		background-color: var(--body-background-color);
+		color: var(--nav-hover-link-color);
+	  
+	  }
+	
+	.navigation ul {
+		/* display: none; */
+		padding: 1rem;
+		text-align: center;
+		text-decoration: none;
+		color: var(--nav-hover-link-color);
+		list-style-type: none;
+		font-size: 1rem;;
+		
+	}
+	
+	.navigation a:link,
+	.navigation a:visited {
+	  color: var(--nav-link-color);
+	}
+	.navigation a:hover {
+		color: var(--nav-hover-color);
+		background-color: var(--nav-hover-background-color);
+		border-radius: 50px; 
+	}
+
+
+	.section-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px; /* Adjust the gap according to your design */
+      }
+
+      .card {
+        width: 100%; /* Optional: Adjust the width based on your design */
+      }
 
 }
