@@ -1,8 +1,22 @@
 @media (max-width: 37.5em) {
 
+
+  #menu::before {
+    content: "☰";
+  }
+
+  #menu.open::before {
+    content: "X";
+  }
+
+  .open a {
+    display: block;
+  }
+  
+  
   #menu {
     font-size: 1.5rem;
-    border: 1px solid var(accent2-color);
+    border: 1px solid ;
     margin: 2px;
     width: 40px;
     height: 40px;
@@ -16,25 +30,12 @@
     border-radius: 25px;
   }
 
-  #menu::before {
-    content: "☰";
-  }
-
-  #menu.open::before {
-    content: "X";
-  }
-
-  .open a {
-    display: block;
-  }
-
   /* ****************************************** */
   /* My code to custom the site  */
-  
+
   header #logo {
     width: 80px;
     height: 60px;
-
   }
 
   header {
@@ -43,28 +44,25 @@
   }
 
   .navigation.open {
-    /* grid-column: 1/6; */
-    /* display: flex;
-    flex-direction: row; */
     width: 40%;
     text-align: left;
     background-color: var(--accent1-color);
-    opacity: .81;
+    opacity: 0.81;
     position: absolute;
     left: 0;
     top: 65px;
     color: var(--secondary-color);
-    font-size: bold;
+    /* font-size: bold; */
   }
 
   .navigation a {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   #map {
     text-align: center;
     height: 100px;
-    width: 100%;
+    width: 100px;
     border-color: var(--header-background-color);
   }
 
@@ -77,8 +75,7 @@
     margin: 20px;
     z-index: -1;
     width: 250px;
-    height: 150;
-
+    height: 150px;
   }
 
   .card {
@@ -95,6 +92,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+
+  h1 {
+    display: none;
+  }
+
 
 
 }
