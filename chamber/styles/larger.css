@@ -1,0 +1,115 @@
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+		h1 {
+			font-size: 2.5rem;
+			margin-left: 0;
+			text-align: center;
+		}
+		
+		h2 {
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		#menu {
+			display: none; /* hide hamburger button */
+		}
+
+		nav {
+			max-width: 800px;
+			margin: .5rem auto;
+			/* background-color: #ac5454; */
+		}
+
+	
+		.navigation ul {
+			margin: 0rem auto;
+			display: flex;
+			flex-direction: row;
+			list-style: none;
+	
+			color: #fff;
+		}
+		.navigation a {
+				display: block;
+				flex: 1 1 100%;
+			
+		}
+			
+		/* .stuff {
+				margin: 1rem auto;
+		} */
+
+
+/* ****************************************** */
+/* My code to custom site */
+
+footer {
+	
+  
+	margin :0;
+	text-align: center;
+	justify-content: space-around;
+	align-items: center;
+  
+  }
+
+li {
+	font-size: 1.5rem;
+}
+
+#map{
+	text-align: center;
+	height : 250px ;
+	width :50% ;
+}
+
+#mapdiv {
+	text-align: center;
+}
+
+
+  #lastModified {
+	font-weight: bold;
+	font-size: 1em;
+  }
+header #logo{
+    width: 100px;
+    height: 80px;
+	
+}
+
+#main-image{
+	/* grid-column: 6 / 16; */
+	/* position: relative; */
+	/* top: 0;     */
+	/* width: 90%; */
+	border-radius: 3px;
+	margin: 20px;
+	z-index: -1;
+	width: 500px;
+	height: 300px;
+}
+
+.section-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px; /* Adjust the gap according to your design */
+  }
+
+  .card {
+	text-align:left;
+	font-family: var(--paragraph-font);
+	font-size: 2.2ex;
+	width: 100%; /* Optional: Adjust the width based on your design */
+	background-color:var(--secondary-color);
+	margin: 10px;
+	color :#fff;
+	padding: 1rem;
+
+  }
+
+
+
+}

@@ -1,0 +1,100 @@
+@media (max-width: 37.5em) {
+
+  #menu {
+    font-size: 1.5rem;
+    border: 1px solid var(accent2-color);
+    margin: 2px;
+    width: 40px;
+    height: 40px;
+    padding: 3px 3px 3px 3px;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    /*on the left */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+  }
+
+  #menu::before {
+    content: "☰";
+  }
+
+  #menu.open::before {
+    content: "X";
+  }
+
+  .open a {
+    display: block;
+  }
+
+  /* ****************************************** */
+  /* My code to custom the site  */
+  
+  header #logo {
+    width: 80px;
+    height: 60px;
+
+  }
+
+  header {
+    grid-column: 1/21;
+    grid-row: 1/2;
+  }
+
+  .navigation.open {
+    /* grid-column: 1/6; */
+    /* display: flex;
+    flex-direction: row; */
+    width: 40%;
+    text-align: left;
+    background-color: var(--accent1-color);
+    opacity: .81;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    color: var(--secondary-color);
+    font-size: bold;
+  }
+
+  .navigation a {
+    padding: .5rem;
+  }
+
+  #map {
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    border-color: var(--header-background-color);
+  }
+
+  #mapdiv {
+    text-align: center;
+  }
+
+  #main-image {
+    border-radius: 3px;
+    margin: 20px;
+    z-index: -1;
+    width: 250px;
+    height: 150;
+
+  }
+
+  .card {
+    width: 100%;
+    background-color: var(--secondary-color);
+    margin: 10px;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .section-container {
+    display: block;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+
+}
