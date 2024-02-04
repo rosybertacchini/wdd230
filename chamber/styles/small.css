@@ -1,6 +1,5 @@
 @media (max-width: 37.5em) {
 
-
   #menu::before {
     content: "☰";
   }
@@ -12,8 +11,7 @@
   .open a {
     display: block;
   }
-  
-  
+    
   #menu {
     font-size: 1.5rem;
     border: 1px solid ;
@@ -52,7 +50,6 @@
     left: 0;
     top: 65px;
     color: var(--secondary-color);
-    /* font-size: bold; */
   }
 
   .navigation a {
@@ -74,8 +71,9 @@
     border-radius: 3px;
     margin: 20px;
     z-index: -1;
-    width: 250px;
-    height: 150px;
+    width : 100%;
+    /* width: 250px;
+    height: 150px; */
   }
 
   .card {

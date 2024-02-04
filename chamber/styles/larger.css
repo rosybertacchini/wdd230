@@ -1,12 +1,5 @@
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
-  h1 {
-    font-size: 1.52rem;
-    margin-left: 20px;
-    text-align: center;
-    position: absolute;
-    top: 5px;
-  }
 
   h2 {
     font-size: 2rem;
@@ -14,12 +7,13 @@
   }
 
   #menu {
-    display: none; /* hide hamburger button */
+    display: none;
+    /* hide hamburger button */
   }
 
   nav {
     max-width: 900px;
-    margin: 0.5rem auto;
+    margin: 0.7rem auto;
   }
 
   .navigation ul {
@@ -37,6 +31,15 @@
 
   /* ****************************************** */
   /* My code to custom site */
+
+  h1 {
+    grid-column: 1/6;
+    /* text-align: left; */
+    font-family: times, serif;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+
+  }
 
   footer {
     margin: 0;
@@ -63,30 +66,39 @@
     font-weight: bold;
     font-size: 1em;
   }
-  header #logo {
+
+  #logo {
     width: 100px;
     height: 80px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
   }
 
   #main-image {
     border-radius: 3px;
     margin: 20px;
     z-index: -1;
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    /* width: 618px;
+    height: 328px; */
+    /* aspect-ratio: calc(618 / 328 * 100%); */
+
   }
 
   .section-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Adjust the gap according to your design */
+    gap: 20px;
+    /* Adjust the gap according to your design */
   }
 
   .card {
     text-align: left;
     font-family: var(--paragraph-font);
     font-size: 2.2ex;
-    width: 100%; /* Optional: Adjust the width based on your design */
+    width: 100%;
+    /* Optional: Adjust the width based on your design */
     background-color: var(--secondary-color);
     margin: 10px;
     color: #fff;

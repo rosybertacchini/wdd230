@@ -32,6 +32,5 @@ hamButton.addEventListener('click', () => {
 
 
 
-
   // *********************************************************** //
-  getWeatherInfo();
+//  getWeatherInfo(); 
