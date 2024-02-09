@@ -1,4 +1,4 @@
-@media (max-width: 37.5em) {
+@media (max-width: 37.499em) {
 
   #menu::before {
     content: "☰";
@@ -11,10 +11,10 @@
   .open a {
     display: block;
   }
-    
+
   #menu {
     font-size: 1.5rem;
-    border: 1px solid ;
+    border: 1px solid;
     margin: 2px;
     width: 40px;
     height: 40px;
@@ -34,11 +34,13 @@
   header #logo {
     width: 80px;
     height: 60px;
+
   }
 
   header {
     grid-column: 1/21;
     grid-row: 1/2;
+    margin-top: 0rem;
   }
 
   .navigation.open {
@@ -71,17 +73,8 @@
     border-radius: 3px;
     margin: 20px;
     z-index: -1;
-    width : 100%;
-    /* width: 250px;
-    height: 150px; */
-  }
-
-  .card {
     width: 100%;
-    background-color: var(--secondary-color);
-    margin: 10px;
-    color: #fff;
-    padding: 1rem;
+
   }
 
   .section-container {
@@ -96,5 +89,64 @@
   }
 
 
+  #first-section {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #slogan {
+
+    position: unset;
+
+  }
+ /* ************************************************  */
+
+ main {
+  grid-column: 2/19 ;
+  text-align: center;
+}
+
+ #wellcome {
+  grid-column: 2/19;
+ }
+
+ /* ************************************************  */
+  .card h2 {
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+  }
+
+  footer p {
+    font-size: .7rem;
+  }
+
+  .events p {
+    font-size: .8rem;
+  }
+
+  p {
+    font-size: .9rem;
+    ;
+  }
+
+  .card li {
+    margin: 5px;
+  }
+
+  #youtube,
+  #twitter,
+  #facebook {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  header #media {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    display: block;
+
+  }
 
 }

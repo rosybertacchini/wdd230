@@ -16,6 +16,14 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
+function adjustTextWidth(){
+    const htmlEl = document.getElementById('full-width');
+    htmlEl.style.fontSize = "25%";
+    htmlEl.style.fontSize = (window.innerWidth / htmlEl.offsetWidth) * parseInt(htmlEl.style.fontSize.slice(0,-1)) * 1.4 + "%";
+    console.log(window.innerWidth, htmlEl.offsetWidth, htmlEl.style.fontSize);
+}
+adjustTextWidth();
+window.addEventListener('resize', adjustTextWidth);
 
 
 
