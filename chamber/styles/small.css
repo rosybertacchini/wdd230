@@ -71,7 +71,7 @@
 
   #main-image {
     border-radius: 3px;
-    margin: 20px;
+    /* margin: 20px; */
     z-index: -1;
     width: 100%;
 
@@ -91,7 +91,7 @@
 
   #first-section {
     display: block;
-    margin: 0 auto;
+    margin:3px;
   }
 
   #slogan {
@@ -147,6 +147,18 @@
 
     display: block;
 
+  }
+
+  #mode {
+    position: absolute;
+    top: 70px;
+    right: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  #becomeamember {
+    display:none;
   }
 
 }

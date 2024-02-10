@@ -11,34 +11,29 @@ var h = window.innerHeight;
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
+
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
 
-function adjustTextWidth(){
-    const htmlEl = document.getElementById('full-width');
-    htmlEl.style.fontSize = "25%";
-    htmlEl.style.fontSize = (window.innerWidth / htmlEl.offsetWidth) * parseInt(htmlEl.style.fontSize.slice(0,-1)) * 1.4 + "%";
-    console.log(window.innerWidth, htmlEl.offsetWidth, htmlEl.style.fontSize);
-}
-adjustTextWidth();
-window.addEventListener('resize', adjustTextWidth);
+
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("#main");
+
+modeButton.addEventListener("click", () => {
+	if (modeButton.textContent.includes("🕶️")) {
+    	main.style.background = "#000";
+		main.style.color = "#fff";
+		modeButton.textContent = "🔆";
+	} else {
+		main.style.background = "#fff";
+		main.style.color = "#000";
+		modeButton.textContent = "🕶️";
+	}
+});
+
+// **********************************************
 
 
 
-// const getWeatherInfo = async () => {
-// 	const response = await fetch(	  
-// 	  "http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=bf0dd84c28e62391c7294fb52233ed70"
-// 	).then((response) => response.json());
-// 	console.log(response);
-  
-// 	// // cearte an array
-// 	// weatherInfo = response.record.coords;
-// 	// console.log(weatherInfo);
-//   };
-
-
-
-  // *********************************************************** //
-//  getWeatherInfo(); 
