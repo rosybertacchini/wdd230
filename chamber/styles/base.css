@@ -101,7 +101,6 @@ body {
 main {
   grid-column: 6/16;
   text-align: center;
-  background-color: #000;
 }
 
 header {
