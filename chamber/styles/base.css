@@ -209,4 +209,12 @@ header {
   text-align: left;
 }
 
+#mode {
+	position: absolute;
+	top: 445rem;
+	right: 2rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
 /*
