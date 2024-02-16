@@ -341,6 +341,11 @@ footer {
         width: 100%; /* Optional: Adjust the width based on your design */
       }
 
+	  #temple {
+		grid-column: 6/16;
+		
+	  }
+
 }
 
 
