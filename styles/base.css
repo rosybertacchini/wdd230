@@ -34,7 +34,7 @@ a {
 header {
 
 	padding: 3px;
-	grid-column: 1 / 21;
+	grid-column: 1 / 20;
 	font-family: var(--heading-font);
 	background-color: var(--header-background-color);
 	text-align: center;
@@ -79,7 +79,7 @@ h1 {
 
 
 .navigation {
-	grid-column: 1 / 21;
+	grid-column: 1 / 20;
 	text-align: center;
 	padding: 0px;
 	/* flex-direction: column; */

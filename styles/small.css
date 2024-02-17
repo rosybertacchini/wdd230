@@ -1,8 +1,0 @@
-@media (max-width: 37.499em) {
-    #temple{
-        grid-column: 1/21;
-    }
-    header {
-        grid-column: 1/21;
-    }
-}
