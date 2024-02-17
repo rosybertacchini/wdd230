@@ -2,65 +2,70 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Koh+Santepheap&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap");
 
-:root {
-  --header-background-color: lightblue;
-  --navarea-background-color: rgb(126, 188, 208);
-  --body-background-color: rgb(233, 247, 252);
 
-  --heading-font: "Sofia", sans-serif;
-  --paragraph-font: "Koh Santepheap", Helvetica, sans-serif;
-  --nav-background-color: rgb(121, 138, 234);
-  --nav-hover-link-color: rgb(13, 71, 92);
-  --nav-hover-background-color: rgb(13, 71, 92);
-  --nav-hover-color: #fff;
+
+:root {
+	--header-background-color: lightblue;
+	--navarea-background-color: rgb(126, 188, 208);
+	--body-background-color: rgb(233, 247, 252);
+
+	--heading-font: "Sofia", sans-serif;
+	--paragraph-font: "Koh Santepheap", Helvetica, sans-serif;
+	--nav-background-color: rgb(121, 138, 234);
+	--nav-hover-link-color: rgb(13, 71, 92);
+	--nav-hover-background-color: rgb(13, 71, 92);
+	--nav-hover-color: #fff;
 }
 
 body {
 	display: grid;
-	grid-template: auto 1fr auto / repeat(20,1fr);
+	grid-template: auto 1fr auto / repeat(20, 1fr);
 	background-color: var(--body-background-color);
-	margin :0;
+	margin: 0;
 	padding: 0;
-  }
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
-  a {
+a {
 	text-decoration: none;
-} 
+}
 
 header {
-	
+
 	padding: 3px;
-	grid-column: 6 / 16;
+	grid-column: 1 / 21;
 	font-family: var(--heading-font);
 	background-color: var(--header-background-color);
 	text-align: center;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	margin :0;
-  }
+	margin: 0;
+}
 
-  #mypicture {
+#mypicture {
 	border-radius: 25px;
 	width: 80px;
 	border: 1px solid #163384;
 	box-shadow: 5px 5px 10px #6f7364;
-	margin :0;
+	margin: 0;
 	padding: 0;
-  }
+}
+
 /* small view navigation */
 h1 {
-	font-size: .8em;
-  }
+	font-size: 1.3em;
+}
 
 #menu {
 	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
+	border: 1px solid rgba(0, 0, 0, .3);
 	padding: 3px 7px 6px;
-	background-color:  var(--nav-hover-background-color);
+	background-color: var(--nav-hover-background-color);
 	color: #fff;
-  	position: absolute;
-  	top: 0;
-  	right: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 #menu::before {
@@ -70,8 +75,11 @@ h1 {
 #menu.open::before {
 	content: "X";
 }
+
+
+
 .navigation {
-	grid-column: 6 / 16;
+	grid-column: 1 / 21;
 	text-align: center;
 	padding: 0px;
 	/* flex-direction: column; */
@@ -79,7 +87,8 @@ h1 {
 	background-color: var(--nav-hover-background-color);
 	color: #fff;
 }
-  .navigation li {
+
+.navigation li {
 	padding: .3rem;
 }
 
@@ -89,12 +98,13 @@ h1 {
 	text-align: center;
 	text-decoration: none;
 	list-style-type: none;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	/* color: #fff; */
 }
+
 .navigation a {
 	color: #fff;
-    padding: 1rem;
+	padding: 1rem;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
@@ -110,29 +120,34 @@ h1 {
 } 
 */
 footer {
-	grid-column: 6 / 16;
-  
-	margin :0;
+	grid-column: 1 / 20;
+	;
+
+	margin: 0;
 	text-align: center;
 	justify-content: space-around;
 	align-items: center;
-  
-  }
-  #lastModified {
+
+}
+
+#lastModified {
 	font-weight: bold;
 	font-size: .8em;
-  }
-  #mexican-flag{
+}
+
+#mexican-flag {
 	width: 50%;
-  }
-  /* ------------------------------------- */
- 
-  main {
-	grid-column: 6 / 16;
+}
+
+/* ------------------------------------- */
+
+main {
+	grid-column: 1 / 20;
 	text-align: center;
-  }
-  /* ------------------------------------- */
-  /* footer {
+}
+
+/* ------------------------------------- */
+/* footer {
 	grid-column: 6 / 16;
   
 	margin :0;
@@ -142,42 +157,58 @@ footer {
   
   } */
 
-  #mexican-flag{
+#mexican-flag {
 	width: 80px;
-  }
-  /* ------------------------------------- */
- 
-  .card {
+}
+
+/* ------------------------------------- */
+
+.card {
 	padding: 5px;
-	text-align:left;
+	text-align: left;
 	font-family: var(--paragraph-font);
-	font-size: 1.5ex;
-  }
-  ul {
+	font-size: .9em;
+}
+
+ul {
 	list-style-type: none;
-  }
-  h3 {
+}
+
+h3 {
 	background-color: var(--header-background-color);
 	padding: 10px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	font-family: "Amaranth";
 	text-align: center;
-  }
-  h2 {
+	font-size: 1.5em;
+}
+
+h2 {
 	font-family: "Amaranth";
-	font-size: 1em;
-  }
-  #map{
+	font-size: 1.2em;
+}
+
+#map {
 	text-align: center;
-	height : 100px ;
-	width :100% ;
+	height: 100px;
+	width: 100%;
 	border-color: var(--header-background-color);
-  }
- #mapdiv {
-		text-align: center;
-	}
- 
+}
+
+#mapdiv {
+	text-align: center;
+}
+
+
+#temple-label {
+
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.3rem;
+	font-family: var(--heading-font), serif;
+}
 
 
 
@@ -189,17 +220,18 @@ footer {
 		margin-left: 0;
 		text-align: center;
 	}
-	
+
 	h2 {
 		font-size: 2rem;
 		text-align: center;
 	}
 
 	#menu {
-		display: none; /* hide hamburger button */
+		display: none;
+		/* hide hamburger button */
 	}
 
-	.navigation ul{
+	.navigation ul {
 		flex-direction: row;
 	}
 
@@ -209,8 +241,9 @@ footer {
 	}
 
 	/* my code */
-	 .navigation a {
-		grid-column: 6 / 16;
+	.navigation a {
+		grid-column: 1 / 20;
+		;
 		margin: 0 auto;
 		text-align: center;
 		padding: 5px;
@@ -219,16 +252,17 @@ footer {
 		background-color: var(--body-background-color);
 		color: var(--nav-hover-link-color);
 		font-size: 1.2rem;
-	  
-	  } 
-    h1 {
+
+	}
+
+	h1 {
 		font-size: 2rem;
 		margin-left: 0;
 		position: relative;
 		left: 20px;
-	
-  	}
-	
+
+	}
+
 	h2 {
 		font-size: 1.5rem;
 
@@ -236,20 +270,22 @@ footer {
 
 	header {
 		padding: 1rem;
-		grid-column: 6 / 16;
+		grid-column: 1 / 20;
 		font-family: var(--heading-font);
 		background-color: var(--header-background-color);
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
-		}
+	}
 
-	#header-container{		 
+	#header-container {
 		display: flex;
 	}
-	#header-container:last-child {		 
+
+	#header-container:last-child {
 		position: relative;
 		left: 15px;
-		}
+	}
+
 	#mypicture {
 		border-radius: 25px;
 		width: 120px;
@@ -257,48 +293,52 @@ footer {
 		box-shadow: 5px 5px 10px #6f7364;
 	}
 
-	#map{
+	#map {
 		text-align: center;
-		height : 250px ;
-		width :50% ;
+		height: 250px;
+		width: 50%;
 		border-color: var(--header-background-color);
 	}
+
 	#mapdiv {
 		text-align: center;
 	}
+
 	.card {
-	
+
 		padding: 5px;
-		text-align:left;
+		text-align: left;
 		font-family: var(--paragraph-font);
 		font-size: 2ex;
-	  }
+	}
 
-	  #lastModified {
+	#lastModified {
 		font-weight: bold;
 		font-size: 1em;
-	  }
+	}
 
 
 
 
-	  /* 2 columns in main */
-	  section-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px; /* Adjust the gap according to your design */
-      }
-
-	 
-
-      .card {
-        width: 100%; /* Optional: Adjust the width based on your design */
-      }
+	/* 2 columns in main */
+	section-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		/* Adjust the gap according to your design */
+	}
 
 
-/*    navegacion */
-	  .navigation {
-		grid-column: 6 / 16;
+
+	.card {
+		width: 100%;
+		/* Optional: Adjust the width based on your design */
+	}
+
+
+	/*    navegacion */
+	.navigation {
+		grid-column: 1 / 20;
 		margin: 0 auto;
 		text-align: center;
 		padding: 0px;
@@ -306,9 +346,9 @@ footer {
 		list-style: none;
 		background-color: var(--body-background-color);
 		color: var(--nav-hover-link-color);
-	  
-	  }
-	
+
+	}
+
 	.navigation ul {
 		/* display: none; */
 		padding: 1rem;
@@ -316,36 +356,45 @@ footer {
 		text-decoration: none;
 		color: var(--nav-hover-link-color);
 		list-style-type: none;
-		font-size: 1rem;;
-		
+		font-size: 1rem;
+		;
+
 	}
-	
+
 	.navigation a:link,
 	.navigation a:visited {
-	  color: var(--nav-link-color);
+		color: var(--nav-link-color);
 	}
+
 	.navigation a:hover {
 		color: var(--nav-hover-color);
 		background-color: var(--nav-hover-background-color);
-		border-radius: 50px; 
+		border-radius: 50px;
+	}
+
+	.section-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		/* Adjust the gap according to your design */
+	}
+
+	.card {
+		width: 100%;
+		/* Optional: Adjust the width based on your design */
 	}
 
 
-	.section-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px; /* Adjust the gap according to your design */
-      }
+	#temple-label {
+		position: absolute;
+		top: 300px;
+		left: 250px;
+		margin: 0;
+		padding: .25rem;
+		font-weight: 700;
+		font-size: 2rem;
+		font-family: var(--heading-font), serif;
+	}
 
-      .card {
-        width: 100%; /* Optional: Adjust the width based on your design */
-      }
-
-	  #temple {
-		grid-column: 6/16;
-		
-	  }
 
 }
-
-
