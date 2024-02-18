@@ -49,7 +49,13 @@
         Igniting Growth: Your Chamber,
         Your Community!</div>
         <div id="imagebox">
-          <img id="main-image" src="../chamber/images/canaco-building.webp" alt="Chamber Building" />
+          <!-- <img id="main-image" src="../chamber/images/canaco-building.webp" alt="Chamber Building" /> -->
+          <picture>
+            <source srcset="../chamber/images/hero-small.webp" media="(max-width: 401px)">
+            <source srcset="../chamber/images/hero-medium.webp" media="(max-width: 801px)">
+            <source srcset="../chamber/images/hero-lagre.webp" media="(max-width: 1201px)">
+            <img src="../chamber/images/hero-lagre.webp" alt="Chamber of Comerce" width="1200" height="800">
+          </picture>          
         </div>
     </section>
     <section id="wellcome">
@@ -62,6 +68,17 @@
         small businesses, and established enterprises can connect, grow, and succeed. Our commitment is to serve as a
         catalyst for economic development, innovation, and prosperity.
       </p>
+      <div id="databox">
+        <span >Temperature Celsius:
+          <input type="number" id="temperature" >
+        </span>
+        <br>
+        <span  >Wind Speed in km/h: <input type="number" id="windSpeed" >
+        </span>
+        <br/>
+        <button type="button" onclick="calculateWindChill()">Calculate Wind Chill</button>        
+      </div>
+       
     </section>
     <div class="section-cards">
       <section class="card">
@@ -77,9 +94,9 @@
         <h2>Weather</h2>
         <br>
         <div id="weather">
-          <p>The weater in Tijuana,</p>
-          <p> Baja Califoria -Mexico</p>
-        </div>
+          <p>Weather in Tijuana Baja California - MEXICO</p>
+          <p id="result"></p>
+        </div> 
       </section>
     </div>
     <!-- ------------------------------------------------------------ -->
@@ -143,5 +160,6 @@
   </footer>
   <script src="../chamber/scripts/base.js"></script>
   <script src="../chamber/scripts/getdates.js"></script>
+  <script src="../chamber/scripts/windchill.js"></script>
 </body>
 </html>
