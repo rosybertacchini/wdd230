@@ -43,33 +43,23 @@ button {
 	gap: 1rem;
 }
 
-.list {
-	padding: 0.5rem;
-}
 
 ul {
-	margin: 1rem;
+	margin: 10px;
 	list-style: none;
+	text-align: left;
 }
 
 li {
 	display: flex;
-
+	flex-direction: row;
 }
 
 /* ******************************* my code ******************************** */
 main #chapters {
     background-color: rgb(167, 145, 136);
-    margin: .5rem auto ;
+    margin: 0rem auto ;
     width: 100%;
-	text-align: center;
-	
-/* 
-
-	display: flex;
-	align-items: center;
-	justify-content: space-between; */
-
 }
 
 

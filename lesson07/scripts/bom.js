@@ -35,6 +35,8 @@ function displayList(item) {
     let deletebutton = document.createElement('button');
     li.textContent = item;
     deletebutton.textContent = '❌';
+    deletebutton.style.width = "50px";
+    li.style.alignItems = "top";
     deletebutton.classList.add('delete');
     li.append(deletebutton);
     list.append(li);
