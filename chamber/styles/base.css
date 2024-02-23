@@ -112,7 +112,7 @@ header {
 
 p {
   margin: 5px;
-  font-size: clamp(.9rem, 1.5vw, 2rem);
+  font-size: clamp(.8rem, 1.5vw, 1.5rem);
   font-family: var(--paragraph-font);
   text-align: center;
   line-height: 1.5;

@@ -181,7 +181,7 @@ h2 {
 
 #map {
 	text-align: center;
-	height: 100px;
+	height: 50px;
 	width: 100%;
 	border-color: var(--header-background-color);
 }
