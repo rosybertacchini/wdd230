@@ -31,7 +31,7 @@ function displayMessage() {
           (1000 * 60 * 60 * 24)
       );
       console.log(`You last visited ${daysSinceLastVisit} days ago.`);
-      message = `You last visited ${daysSinceLastVisit} days ago.`;
+      message.innerHTML = `You last visited ${daysSinceLastVisit} days ago.`;
       // Update last visit date to today
       localStorage.setItem("lastVisitDate", currentDate);
     }
