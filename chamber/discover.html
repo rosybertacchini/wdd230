@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Discover - CANACO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rosy Bertacchini" />
+    <meta
+      name="description"
+      content="Connecting businesses and fostering economic growth in our community. Join the Chamber of Commerce for networking and collaboration. "
+    />
+    <meta property="og:title" content="CANACO - Tijuana Chamber of Commerce " />
+    <meta
+      property="og:url"
+      content="https://rosybertacchini.github.io/wdd230/chamber/"
+    />
+    <meta
+      property="og:image"
+      content="https://static.wixstatic.com/media/3efac5_a791c55b985f4dd3b8478087f3f4dc8d~mv2.jpeg/v1/crop/x_0,y_50,w_1600,h_850/fill/w_618,h_328,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3efac5_a791c55b985f4dd3b8478087f3f4dc8d~mv2.jpeg"
+    />
+    <meta property="og:site_name" content="CANACO" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <link rel="stylesheet" href="../chamber/styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../chamber/styles/base.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../chamber/styles/small.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../chamber/styles/larger.css"
+    />
+
+    <link rel="fonts" href="https://fonts.googleapis.com/css?family=Sofia" />
+    <link rel="icon" href="../chamber/favicon-16x16.png" />
+  </head>
+
+  <body>
+    <h1>Tijuana Chamber of Commerce</h1>
+    <section id="media">
+      <a href="https://twitter.com/"
+        ><img
+          id="twitter"
+          src="../chamber/images/twiter.png"
+          alt="Twitter Logo"
+      /></a>
+      <a href="https://facebook.com"
+        ><img
+          id="facebook"
+          src="../chamber/images/facebook.PNG"
+          alt="Facebook logo"
+      /></a>
+      <a href="https://youtube.com/"
+        ><img
+          id="youtube"
+          src="../chamber/images/youtube.PNG"
+          alt="Youtube Logo"
+      /></a>
+    </section>
+    <header>
+      <div id="mode">🕶️</div>
+      <button id="menu" title="theMenu"></button>
+      <img id="logo" src="../chamber/images/logo.webp" alt="Chamber Logo" />
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+        </ul>
+        <a href="#" id="becomeamember" class="button">BECOME A MEMBER</a>
+      </nav>
+    </header>
+    <main id="main">
+      <div id="message"></div>
+      <div class="sidebar">
+        <div id="container-cards">
+          <section class="card-barside">
+            <h2>Business Networking Mixer</h2>
+
+            <p>
+              Where local businesses, entrepreneurs gather to network and build
+              relationships.
+            </p>
+          </section>
+
+          <section class="card-barside">
+            <h2>Trade Fair or Expo</h2>
+            <p>
+              Where businesses and industries from the community or region set
+              up booths or exhibits to display their products and services.
+            </p>
+          </section>
+        </div>
+        <div id="container-images">
+          <picture>
+            <img
+              class="laziImages"
+              src="images/tijuana4.webp"
+              alt="random image"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Business Networking Mixer</h3>
+          <br />
+          <p>
+            This can take the form of a casual evening mixer, a speed networking
+            session, or a themed event that encourages interaction among
+            participants. Purpose: Facilitate connections between businesses,
+            fostering collaboration, partnerships, and knowledge exchange within
+            the local business community.
+          </p>
+          <picture>
+            <img
+              class="laziImages"
+              src="images/tijuana9.webp"
+              alt="random image"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Trade Fair or Expo</h3>
+          <br />
+          <p>
+            This can be industry-specific or cover a range of sectors depending
+            on the chamber's focus.
+          </p>
+          <p>
+            Purpose: Provide a platform for businesses to showcase their
+            offerings, generate leads, and promote economic activity. It also
+            allows attendees to discover local products and services.
+          </p>
+          <picture>
+            <img
+              class="laziImages"
+              src="images/tijuana5.webp"
+              alt="random image"
+              loading="lazy"
+            />
+          </picture>
+
+          <picture>
+            <img
+              class="laziImages"
+              src="images/tijuana6.webp"
+              alt="random image"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <img
+              class="laziImages"
+              src="images/tijuana8.webp"
+              alt="random image"
+              loading="lazy"
+            />
+          </picture>
+          <picture>
+            <img
+              class="laziImages"
+              src="images/tijuana10.webp"
+              alt="random image"
+              loading="lazy"
+            />
+          </picture>
+ 
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <p>This site is a projet for BYUI class WDD230</p>
+      </section>
+      <section>
+        <p>Rosy Bertacchini &copy; <span id="year"></span></p>
+        <p>City: Tijuana</p>
+        <p>Municipality: Baja California Mexico</p>
+        <p>Xavier Villaurrutia 1271, Zona Urbana Rio Tijuana, 22010</p>
+      </section>
+      <section>
+        <p id="lastModified"></p>
+      </section>
+    </footer>
+    <script src="../chamber/scripts/base.js"></script>
+    <script src="../chamber/scripts/getdates.js"></script>
+    <script src="../chamber/scripts/windchill.js"></script>
+    <script src="../chamber/scripts/visits.js"></script>
+  </body>
+</html>

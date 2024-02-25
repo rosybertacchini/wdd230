@@ -18,11 +18,24 @@ function calculateWindChill() {
         return;
     }
 
-    // Calculate wind chill factor
-    var windChill = calculateWindChillFactor(temperature, windSpeed);
+    // check values of temperature and winSpeed
+    if( temperature <= 10  ||  windChill <= 4.82) {
 
-    // Display the result
-    document.getElementById('result').innerText = "Wind Chill Factor: " + windChill.toFixed(2) + " °C";
+        // Calculate wind chill factor
+        var windChill = calculateWindChillFactor(temperature, windSpeed);
+
+        // Display the result
+        document.getElementById('result').innerText = "Wind Chill Factor: " + windChill.toFixed(2) + " °C";
+        document.getElementById('result').style.color = "red";
+        
+    }
+    else {
+        alert("Please veryfy tempreture is >= 10 celcius and wind chill is >= 4.82 kilometer per hour")
+    }
+
+
+
+
 }
 
 

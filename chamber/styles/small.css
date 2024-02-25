@@ -103,7 +103,7 @@
   /* ************************************************  */
 
   main {
-    grid-column: 2/19;
+    /* grid-column: 2/19; */
     text-align: center;
   }
 
@@ -161,5 +161,103 @@
   #becomeamember {
     display: none;
   }
+
+
+
+
+
+
+
+  /* ************************************************************* */
+
+  .sidebar {
+    text-align: right;
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  #container-cards {
+    width: 140px;
+
+    margin: 0;
+  }
+
+  #container-images {
+    width: 230px;
+    margin: 15px;
+  }
+
+  .laziImages {
+    margin: 4px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  #card-barside {
+    width: 130px;
+    height: auto;
+  }
+
+  /* ************************************************************* */
+
+  .sidebar {
+    text-align: right;
+    display: flex;
+    /* width :400px; */
+
+  }
+
+  #container-cards {
+    /* width: 120px; */
+
+    margin: 10px 0 0 10px;
+    /* background-color: rgb(174, 192, 159); */
+  }
+
+  #container-images {
+    width: 400px;
+    height: auto;
+    margin: 20px 0 0 10px;
+    text-align: center;
+    margin-top: 10px;
+
+
+  }
+
+  .laziImages {
+    width: 100%;
+    /* margin: 0 10px 0 10px 10px; */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  .card-barside {
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+
+  }
+
+  .card-barside h2 {
+    font-size: 1.1rem;
+  }
+
+  .card-barside p {
+    font-size: .7rem;
+  }
+
 
 }
