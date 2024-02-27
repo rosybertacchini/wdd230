@@ -23,7 +23,6 @@ form legend {
 
 form  input, label{
     display: block;
-    align-items: left;
     font-size:  .8rem;
     border: solid 1px #445ba9;
     border-radius: 4px;

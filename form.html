@@ -43,9 +43,10 @@
             <legend>Forms for my Course Site</legend>
             <label class="info">User Name* <input type="text" id="username" name="username" required> </label>
             <label class="info">Password* <input type="password" id="password" name="password" required pattern="^[a-zA-Z0-9]{8,}$"></label>
-            <label class="info">Confirm Password* <input type="password" id="password" name="password" required pattern="^[a-zA-Z0-9]{8,}$"></label>
+            <label class="info">Confirm Password* <input type="password" id="password2" name="password2" required pattern="^[a-zA-Z0-9]{8,}$"></label>
             <label class="info">E-mail* <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
-            <label class="info">Page Rating    <div id="rangevalue">0</div> <input type="range" id="range" name="range"   min="0" max="10" value="0" step="1" list="rangevalues" ></label>
+            <label class="info">Page Rating<input type="range" id="range" name="range"   min="0" max="10" value="0" step="1" list="rangevalues" ></label>
+            <div id="rangevalue">0</div>
             <datalist id="rangevalues">
                 <option value="0">0</option>
                 <option value="1">1</option>
