@@ -1,0 +1,94 @@
+
+/* ***********   FORM   ************** */
+
+main form {
+    text-align:  left;
+    margin-left: 10px;
+}
+
+fieldset {
+    border: 1px solid  #264653;
+    margin: 2rem 0;
+    padding: .5rem 2%;
+    border-radius:  18px;
+    background-color: #fff;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+
+}
+
+form  input, label{
+    display: block;
+    align-items: left;
+    font-size:  .8rem;
+    border: solid 1px #445ba9;
+    border-radius: 4px;
+    padding: .75rem ;
+    color: #555;
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form  label.info{
+    background-color: #fff;
+    border: 0;
+}
+
+form label.info  input:required {
+    border-left: red solid 6px;
+}
+
+form label.info  input:required:valid {
+    border-left: green solid 6px;
+}
+
+form input.submitBtn {
+    border:none;
+    background-color:  #264653;
+    color:white;
+    border-radius: 1rem;
+    padding:  .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+
+#rangevalues  {
+	display: flex;
+    color : blue
+}
+
+#rangevalues {
+	margin-left:25px;
+}
+
+option{
+    padding-right : .7rem;
+    color : red;
+    font-size: .75rem;
+}
+#rangevalue {
+	font-size: 1.1rem;
+    color : blue;
+}
+
+#registration {
+    color : blue;
+}
+
+
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+    option{
+        padding-right : 1.2rem;
+        color : red;
+    }
+
+}
