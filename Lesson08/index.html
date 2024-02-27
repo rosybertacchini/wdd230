@@ -31,7 +31,7 @@
 
     <main>
         <h1>Course Proposal Application</h1>
-        <form method=""get" action="thanks.html">
+        <form method="get" action="thanks.html">
             <fieldset>
                     <legend>Applicant Information</legend>
                     <label class="top">First Name* <input type="text" name="fname" required></label>
@@ -44,21 +44,23 @@
             <fieldset>
                 <legend>Course Information</legend>
                 <div>Audience</div>
-                <label class="sbs"><input type="radio" name="audience" value="beginer">Beginer</label>
-                <label class="sbs"><input type="radio" name="audience" value="intermediate">Intermediate</label>
-                <label class="sbs"><input type="radio" name="adudience" value=""advanced>Advanced</label>
+                <label class="sbs"><input  type="radio" name="audience" value="beginer">Beginer</label>
+                <label class="sbs"><input  type="radio" name="audience" value="intermediate">Intermediate</label>
+                <label class="sbs"><input  type="radio" name="adudience" value="advanced">Advanced</label>
                 <div>Software Needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes">Code</label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes">FTP</label>
+                <label class="sbs"><input  type="checkbox" name="editing" value="yes">Photo Editing</label>
+                <label class="sbs"><input  type="checkbox" name="code" value="yes">Code</label>
+                <label class="sbs"><input  type="checkbox" name="process" value="yes">Preprocessor</label>
+                <label class="sbs"><input  type="checkbox" name="client" value="yes">FTP</label>
             </fieldset> 
             <fieldset>
                 <legend>Founding</legend>
                 <label  class="top">Anticipated Completation Date <input type="date" name="copleteDate"></label>
                 <label  class="top">Course Subject
                         <select name="subject" >
-                        <option value=""  >Please select &#9662</option>
+                        <!-- We add the arrow with   &#9662   porque en safari no se ve-->
+                        <!-- <option value=""  >Please select &#9662</option>  -->
+                        <option value=""  >Please select </option>
                         <option value="software">Software Development</option>
                         <option value="creative">Creative Professional</option>
                         <option value="info">Information Technology</option>
