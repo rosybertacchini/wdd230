@@ -72,16 +72,11 @@ option{
     color : red;
     font-size: .75rem;
 }
-#rangevalue {
-	font-size: 1.1rem;
-    color : blue;
-}
+
 
 #registration {
     color : blue;
 }
-
-
 
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {

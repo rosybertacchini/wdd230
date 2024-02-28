@@ -18,6 +18,7 @@ function validateEmail() {
     var emailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
 
     if (!emailPattern.test(emailInput.value)) {
+        console.log(rango.innerText)
         alert('Please enter a valid BYU-Idaho email address.');
     }
 }

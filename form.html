@@ -44,21 +44,21 @@
             <label class="info">Password* <input type="password" id="password" name="password" required pattern="^[a-zA-Z0-9]{8,}$"></label>
             <label class="info">Confirm Password* <input type="password" id="password2" name="password2" required pattern="^[a-zA-Z0-9]{8,}$"></label>
             <label class="info">E-mail* <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
-            <label class="info">Page Rating<input type="range" id="range" name="range"   min="0" max="10" value="0" step="1" list="rangevalues" ></label>
-            <div id="rangevalue">0</div>
+            <label class="info">Page Rating <span id="rangevalue"> </span><input type="range" id="range" name="range"   min="0" max="10" value="0" step="1" list="rangevalues" ></label>
+            <!-- <div id="rangevalue"></div> -->
             <datalist id="rangevalues">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </datalist>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+          </datalist>
         </fieldset>
         <input type="submit" value="Propose My Course" onclick="validateEmail()" class="submitBtn">        
     </form>
