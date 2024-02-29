@@ -1,6 +1,5 @@
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
-
   h2 {
     font-size: 2rem;
     text-align: center;
@@ -41,7 +40,7 @@
     margin-left: 1.5rem;
     position: absolute;
     top: 0rem;
-    left: 10rem
+    left: 10rem;
   }
 
   footer {
@@ -83,7 +82,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* gap: 20px; */
-
   }
 
   .section-member {
@@ -107,12 +105,11 @@
   #becomeamember {
     background-color: var(--secondary-color);
     color: #fff;
-    width: 14rem;
-    height: 3rem;
+    /* width: 14rem;
+    height: 3rem; */
     position: absolute;
     top: 0px;
     right: 0rem;
-
   }
 
   #youtube,
@@ -136,7 +133,6 @@
 
   /* hero image */
 
-
   #main-image {
     z-index: -1;
   }
@@ -145,7 +141,6 @@
     color: var(--secondary-color);
   }
 
-
   /* ************************************************************* */
 
   .sidebar {
@@ -153,7 +148,7 @@
     display: flex;
 
     justify-content: center;
-    }
+  }
 
   #container-cards {
     margin: 15px;
@@ -162,7 +157,6 @@
     /* margin-left: auto; */
     justify-content: center;
     align-items: center;
-
   }
 
   #container-images {
@@ -188,7 +182,6 @@
     width: 420px;
     animation: fade 8s;
 
-
     border: 5px solid var(--accent1-color);
   }
 
@@ -206,7 +199,6 @@
 
   .card-barside h2 {
     font-size: 1.4rem;
-
   }
 
   .card-barside h3 {
@@ -215,8 +207,34 @@
   }
 
   .card-barside p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
+  /* 3 columns in main */
+  .section-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* Adjust the gap according to your design */
+  }
 
+  .card {
+    padding: 15px;
+    text-align: center;
+    font-family: var(--paragraph-font);
+    font-size: 1.7ex;
+    height: auto;
+    max-width: 80%;
+  }
+  .card p {
+    font-size: 0.8rem;
+  }
+
+  ul {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  #all {
+    margin: 0 auto;
+  }
 }

@@ -103,7 +103,7 @@
   /* ************************************************  */
 
   main {
-    /* grid-column: 2/19; */
+    grid-column: 1/21;
     text-align: center;
   }
 
@@ -257,6 +257,41 @@
 
   .card-barside p {
     font-size: .7rem;
+  }
+
+
+  .card {
+		/* width: 70%; */
+		/* Optional: Adjust the width based on your design */
+	}
+
+	.card {
+
+		padding: 15px;
+		text-align: center;
+		font-family: var(--paragraph-font);
+		font-size: 1.8ex;
+    height: auto;
+    max-width: 90%;
+	}
+  .card  p{
+		font-size: 2ex;
+	}
+
+  ul {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  
+ h2 {
+    font-size: 1.5rem;
+  }
+
+
+
+  #all {
+    margin: 0 auto;
   }
 
 
