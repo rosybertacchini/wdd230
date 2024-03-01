@@ -78,14 +78,17 @@
   }
 
   .section-cards {
-    /* width: 100%; */
+    width: 70%;
+    margin:0 auto;
     display: grid;
+   
     grid-template-columns: repeat(2, 1fr);
     /* gap: 20px; */
   }
 
   .section-member {
-    width: 100%;
+    width: 70%;
+    margin:0 auto;
     display: grid;
     /* grid-column: 6/16; */
     grid-template-columns: repeat(3, 1fr);
@@ -96,6 +99,9 @@
   .card,
   .member p {
     letter-spacing: 1.3px;
+     margin : 0 auto;
+     width: 100%;
+     
   }
 
   footer p {
@@ -224,7 +230,7 @@
     font-family: var(--paragraph-font);
     font-size: 1.7ex;
     height: auto;
-    max-width: 80%;
+    max-width: 70%;
   }
   .card p {
     font-size: 0.8rem;

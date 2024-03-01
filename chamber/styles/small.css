@@ -6,11 +6,16 @@
 
   #menu.open::before {
     content: "X";
+   
   }
 
   .open a {
     display: block;
   }
+
+  /* .open form {
+    z-index: -3;
+  } */
 
   #menu {
     font-size: 1.5rem;

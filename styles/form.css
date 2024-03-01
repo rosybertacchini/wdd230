@@ -4,6 +4,8 @@
 main form {
     text-align:  left;
     margin-left: 10px;
+    width: 100%;
+    max-width: 800;
 }
 
 fieldset {
@@ -68,7 +70,7 @@ form input.submitBtn {
 }
 
 option{
-    padding-right : .7rem;
+    padding-right : 1.2rem;
     color : red;
     font-size: .75rem;
 }
