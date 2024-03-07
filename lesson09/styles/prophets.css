@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:  rgb(59, 54, 131);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 25, 86);
+    border: 0px solid #163384;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin: 0 auto;
+    padding: 0;
+}
+h1,h2 {
+    font-family: "Sofia", sans-serif;
+}
+h2 {
+
+    color: rgb(51, 51, 123);
+    margin: 5px auto;
+    font-size: 1.5rem;
+}
+
+div {
+    padding-bottom: 10px;
+
+}
+
+span {
+    display: block;
+    margin: 0 auto;
+    font-size: .8rem;
+    padding-bottom: 2px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+    border: 0px solid #ccc;
+    box-shadow: 0 0 40px #2e2c2c;
+    padding: 10px;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+section h2{
+    display: block;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #bd850d;
+    margin: 5px auto;
+    padding: 40px;
+    width: auto;
+    background-color: #e1c693;
+}
+
