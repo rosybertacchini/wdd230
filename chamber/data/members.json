@@ -11,7 +11,7 @@
             },
             "phoneNumbers":["6446450373","6646450386"],
             "url": "https://comexplatech.com.mx",
-            "image" : "images/logoElemek.jpg",
+            "image" : "images/logoComex.png",
             "membershipLevel": "Gold"
         },
         {
@@ -25,7 +25,7 @@
             },
             "phoneNumbers":["8585717475","8585717475"],
             "url": "http://elemek.com.mx/",
-            "image" : "images/logoComex.png",
+            "image" : "images/logoElemek.jpg",
             "membershipLevel": "Gold"
         },
         {
@@ -53,7 +53,7 @@
             },
             "phoneNumbers":["6646276020"],
             "url": "https://www.samsung.com/mx/",
-            "image" : "images/logoSamsung.jpg",
+            "image" : "images/logoSamsung.JPG",
             "membershipLevel": "Bronze"
         },
         {
@@ -67,7 +67,7 @@
             },
             "phoneNumbers":["8000212345"],
             "url": "https://www.banamex.com/",
-            "image" :  "images/logoBanamex.jpg",
+            "image" :  "images/logoBanamex.JPG",
             "membershipLevel": "Bronze"
         }  ,
         
@@ -82,7 +82,7 @@
                 },
                 "phoneNumbers":["8007106352"],
                 "url": "https://www.walmart.com.mx/",
-                "image" :"images/logoWallmart.jpg",
+                "image" :"images/logoWallmart.JPG",
                 "membershipLevel": "Bronze"
         } ,
         {
@@ -96,7 +96,7 @@
                     },
                     "phoneNumbers":["5558096555"],
                     "url": "https://www.profuturo.mx/",
-                    "image" :  "images/logoProfuturo.jpg",
+                    "image" :  "images/logoProfuturo.JPG",
                     "membershipLevel": "Bronze"
                
         }
