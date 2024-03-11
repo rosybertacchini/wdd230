@@ -11,6 +11,8 @@ async function getLinks() {
   
 const ol = document.querySelector("#activities");
 
+
+
 function displayLinks(weeks) {
     weeks.lessons.forEach(lesson => {
         // create an li element for element ol
@@ -32,12 +34,6 @@ function displayLinks(weeks) {
 
     })
 }
-
-
-
-
-
-
 
 
 

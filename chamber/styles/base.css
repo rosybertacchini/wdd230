@@ -15,7 +15,7 @@
 
   /* menu mobile*/
   --menu-text-color: #f4a261;
-  --menu-background: #264653;
+  --menu-background: rgb(39, 71, 84);
 }
 
 * {
@@ -110,6 +110,10 @@ p {
   font-family: var(--paragraph-font);
   text-align: center;
   line-height: 1.5;
+  color : #264653;;
+}
+.card p {
+  color: #fff;
 }
 
 footer {
@@ -136,24 +140,8 @@ footer p span last {
   list-style-type: none;
 } */
 
-#slogan {
-  text-align: center;
-  align-items: center;
-  white-space: pre-line;
-  position: absolute;
-  left: 37%;
 
-  font-size: clamp(1.1rem, 2.4vw, 2rem);
-  color: #e0751d;
 
-  border-radius: 10px;
-
-  font-weight: bold;
-}
-
-#first-section {
-  margin: 1.5rem;
-}
 
 header {
   grid-column: 1/21;
@@ -164,18 +152,22 @@ header {
   grid-column: 8/14;
 }
 
+
 .card,
 .member {
   text-align: center;
   font-family: var(--paragraph-font);
   height: 250px;
-  background-color: var(--secondary-color);
+  background-color:  rgba(39, 71, 84, 0.65);
   margin: 20px;
-  color: #fff;
+  color: var(--secondary-color);
   padding: 20px 10px 10px;
-  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.65);
+  box-shadow: 3px 3px 20px rgba(39, 71, 84, 0.95);
   border-radius: 32px;
-  border: 1px #c2c2c2 solid;
+  border: 3px  var(--secondary-color) solid;
+
+
+  
 }
 
 .section-cards {
@@ -201,8 +193,11 @@ header {
 
 #databox {
   padding: 15px;
-  margin: 50px;
-  background-color: var(--accent1-color);
+  /* margin: 50px; */
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 5px;
+
 }
 
 /* ************************************************************* */
@@ -260,11 +255,58 @@ header {
 
   padding: 30px;;
 }
-/* ***********   FORM   ************** */
+
+
+#container-cards p {
+  color :#fff;
+  }
+
+/* ****************************************************** */
+/* hero image */
+
+#first-section {
+   width: 100%;
+   max-width: 900px;
+   margin: 0 auto;
+}
+.hero-container {
+  position: relative;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%; /* Adjust the width as needed */
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff; /* Text color */
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold; /* Optional */
+
+  color: #e0751d;
+  white-space: pre-line;
+  border-radius: 10px;
+  z-index: 0;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+
+
+
+      /* ***********   FORM   ************** */
 
 
 main form {
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   /* z-index: -3; */
   margin: 0 auto;;
   position: relative;
@@ -326,4 +368,77 @@ form input.submitBtn {
   max-width: 18rem;
 }
 
+    /*    DIRECTORY LIST and GRID      */
 
+
+#displayOptIcons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+       margin : 0 auto; 
+}
+#directoryBody {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29, 25, 86);
+  border: 0px solid #163384;
+  box-shadow: 5px 5px 10px #6f7364;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#directoryContainer {
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 0px solid #e1c693;
+  box-shadow: 5px 5px 10px #6f7364;
+
+  padding: 0;
+
+} 
+#directoryCards{
+
+
+
+  font-size: .8rem ;
+   display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+}   
+#grid, #list {
+  width : 40px;
+  height: 40px;
+  
+
+}   
+
+#directoryContainer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #bd850d;
+  margin: 5px auto;
+  padding: 40px;
+  width: auto;
+  background-color: #e1c693;
+
+
+  width: 300px;
+  height: auto;
+  border-radius: 5%;
+  border: 0px solid #ccc;
+  box-shadow: 0 0 40px #2e2c2c;
+  padding: 10px;
+
+
+}

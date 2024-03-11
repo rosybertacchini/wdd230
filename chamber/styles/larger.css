@@ -101,7 +101,6 @@
     letter-spacing: 1.3px;
      margin : 0 auto;
      width: 100%;
-     
   }
 
   footer p {
@@ -135,14 +134,7 @@
     right: 15rem;
   }
 
-  /* ****************************************************** */
-
-  /* hero image */
-
-  #main-image {
-    z-index: -1;
-  }
-
+  
   #spotlights {
     color: var(--secondary-color);
   }
@@ -155,7 +147,7 @@
 
     justify-content: center;
   }
-
+ 
   #container-cards {
     margin: 15px;
     margin-top: 70px;
@@ -163,6 +155,7 @@
     /* margin-left: auto; */
     justify-content: center;
     align-items: center;
+    
   }
 
   #container-images {
@@ -197,6 +190,8 @@
 
   main {
     text-align: center;
+
+
   }
 
   .card-barside {
@@ -225,6 +220,7 @@
   }
 
   .card {
+    margin: 40px auto;
     padding: 15px;
     text-align: center;
     font-family: var(--paragraph-font);

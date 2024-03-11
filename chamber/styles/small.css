@@ -31,6 +31,7 @@
     top: 0;
     left: 0;
     border-radius: 25px;
+  
   }
 
   /* ****************************************** */
@@ -57,6 +58,7 @@
     left: 0;
     top: 65px;
     color: var(--secondary-color);
+    z-index: 1;
   }
 
   .navigation a {
@@ -74,13 +76,7 @@
     text-align: center;
   }
 
-  #main-image {
-    /* border-radius: 3px; */
-    /* margin: 20px; */
-    z-index: -1;
-    /* width: 100%; */
-
-  }
+  
 
   .section-container {
     display: block;
@@ -96,7 +92,7 @@
 
   #first-section {
     display: block;
-    margin: 3px;
+
   }
 
   #slogan {
@@ -120,10 +116,12 @@
   .card h2 {
     font-size: 1rem;
     background-color: var(--secondary-color);
+    border-radius: 3px;
+    padding: 10px;
   }
 
   footer p {
-    font-size: .9rem;
+    font-size: .8rem;
   }
 
   .events p {
@@ -299,5 +297,11 @@
     margin: 0 auto;
   }
 
+
+
+   /* hero image */
+   .hero-text {
+    font-size: 1.4rem;
+  }
 
 }

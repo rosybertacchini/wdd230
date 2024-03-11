@@ -1,0 +1,125 @@
+{
+    "members" : [
+        {
+            "name" : "Comex Platech SA de CV",
+            "address" : {
+                "address1" : "Blvd. Indepandencia 10721",
+                "address2" : "Parque Ind. El Florido",
+                "zipcode" : "22244",
+                "city" : "Tijuana",
+                "state": "Baja California"
+            },
+            "phoneNumbers":["6446450373","6646450386"],
+            "url": "https://comexplatech.com.mx/",
+            "images" : {
+                "image1": "../images/comexImage01.jpg",
+                "image2": "../images/comexImage02.jpg",
+                "image3": "../images/comexImage03.jpg"
+            },
+            "membershipLevel": "Gold"
+        },
+        {
+            "name" : "Elmek Inc",
+            "address" : {
+                "address1" : "900 Lane Av",
+                "address2" : "Suite 170",
+                "zipcode" : "91914",
+                "city" : "Chula Vista",
+                "state": "CA"
+            },
+            "phoneNumbers":["8585717475","8585717475"],
+            "url": "http://elemek.com.mx/",
+            "images" : {
+                "image1": "../images/elemekImage01.jpg",
+                "image2": "../images/elemekImage02.jpg",
+                "image3": "../images/elemekImage03.jpg"
+            },
+            "membershipLevel": "Gold"
+        },
+        {
+            "name" : "ATT Mexico",
+            "address" : {
+                "address1" : "Blvd Insurgentes 2 Esq Calle alamos #17017 Int. 1",
+                "address2" : "Fracc Los Altos",
+                "zipcode" : "22110",
+                "city" : "Tijuana",
+                "state": "Baja California"
+            },
+            "phoneNumbers":["5568090806"],
+            "url": "https://www.att.com.mx/",
+            "images" : {
+                "image1": "../images/attImage01.jpg",
+                "image2": "../images/attImage02.jpg",
+                "image3": "../images/attImage03.jpg"
+            },
+            "membershipLevel": "Bronze"
+        } , 
+        {
+            "name" : "Samsung Mexico SA de CV",
+            "address" : {
+                "address1" : "Blvd. Los Olivos, Parque Industria No.11110",
+                "address2" : "Parque Industrial El Florido",
+                "zipcode" : "22244",
+                "city" : "Tijuana",
+                "state": "Baja California"
+            },
+            "phoneNumbers":["6646276020"],
+            "url": "https://www.samsung.com/mx/",
+            "images" : {
+                "image1": "../images/samsungImage01.jpg",
+                "image2": "../images/samsungImage02.jpg",
+                "image3": "../images/samsungImage03.jpg"
+            },
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name" : "BANAMEX",
+            "address" : {
+                "address1" : "Av de los Insurgentes 9802",
+                "address2" : "El Florido 1ra y 2da Secc",
+                "zipcode" : "22780",
+                "city" : "Tijuana",
+                "state": "Baja California"
+            },
+            "phoneNumbers":["8000212345"],
+            "url": "https://www.banamex.com/",
+            "images" : {
+                "image1": "../images/banamexImage01.jpg",
+                "image2": "../images/banamexImage02.jpg"
+            }
+        }  ,
+        {
+                "name" : "Wallmart Mexico",
+                "address" : {
+                    "address1" : "Av de los Insurgentes 18015",
+                    "address2" : "Rio Tijuana 3ra Etapa",
+                    "zipcode" : "22226",
+                    "city" : "Tijuana",
+                    "state": "Baja California"
+                },
+                "phoneNumbers":["8007106352"],
+                "url": "https://www.walmart.com.mx/",
+                "images" : {
+                    "image1": "../images/wallmartImage01.jpg",
+                    "image2": "../images/wallmartImage02.jpg"
+                }
+        } ,
+        {
+                    "name" : "Profuturo",
+                    "address" : {
+                        "address1" : "José Clemente Orozco 2410 Planta Baja, Oficina 400",
+                        "address2" : "Zona Urbana Rio",
+                        "zipcode" : "22010",
+                        "city" : "Tijuana",
+                        "state": "Baja California"
+                    },
+                    "phoneNumbers":["5558096555"],
+                    "url": "https://www.profuturo.mx/content/wps/portal/Grupo-Profuturo/",
+                    "images" : {
+                        "image1": "../images/samsungImage01.jpg",
+                        "image2": "../images/samsungImage02.jpg",
+                        "image3": "../images/samsungImage03.jpg"
+                    }
+        }
+    ] 
+}
