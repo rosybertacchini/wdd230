@@ -122,6 +122,19 @@
                 "title":"The Fetch API: Prophets"
               }
             ]
+          },
+          {
+            "lesson": "10",
+            "links": [
+              {
+                "url":"lesson10/weather.html",
+                "title":"OpenWeatherMap.org API test"
+              },
+              {
+                "url":"lesson10/x.html",
+                "title":"next API"
+              }
+            ]
           }
         ]
     }
