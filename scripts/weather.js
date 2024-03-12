@@ -24,7 +24,7 @@ async function apiFetch() {
 const displayResults = (data)  => {
 
     data.weather.forEach(w => {   // can be more then one eather event
-        currentTemp.innerHTML = `${data.main.temp}&deg;F`;  // caracter especial para grados
+        currentTemp.innerHTML = `${data.main.temp}&deg;C`;  // caracter especial para grados
         const iconsrc = `https://openweathermap.org/img/w/${w.icon}`;
         weatherIcon.setAttribute('src', iconsrc+ ".png");
         weatherIcon.setAttribute('alt',"Weather Icon");
