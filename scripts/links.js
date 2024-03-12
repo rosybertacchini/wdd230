@@ -18,20 +18,18 @@ function displayLinks(weeks) {
         // create an li element for element ol
         const li = document.createElement('li');
        
-        console.log(`${lesson.lesson}`);
+        //console.log(`${lesson.lesson}`);
         const m_lessonNo = `${lesson.lesson}`;
         lesson.links.forEach(link => {
-            console.log(`${link.url}`);
-            console.log(`${link.title}`);
+           // console.log(`${link.url}`);
+           // console.log(`${link.title}`);
             // build a element
             const a = document.createElement("a");
             a.href = `${link.url}`;
             a.innerHTML = `${link.title}` + " | ";
             li.appendChild(a);
             ol.appendChild(li);
-    
         })
-
     })
 }
 
