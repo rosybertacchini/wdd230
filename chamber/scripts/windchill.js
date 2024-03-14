@@ -32,10 +32,6 @@ function calculateWindChill() {
     else {
         alert("Please veryfy tempreture is >= 10 celcius and wind chill is >= 4.82 kilometer per hour")
     }
-
-
-
-
 }
 
 

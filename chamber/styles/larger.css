@@ -7,7 +7,6 @@
 
   #menu {
     display: none;
-    /* hide hamburger button */
   }
 
   nav {
@@ -32,8 +31,6 @@
   /* My code to custom site */
 
   h1 {
-    /* grid-column: 2/6; */
-    /* text-align: left; */
     font-family: times, serif;
     /* font-size:clamp(.5rem, 2vw , 1.3rem); */
     font-size: 1.3rem;
@@ -81,26 +78,63 @@
     width: 70%;
     margin:0 auto;
     display: grid;
-   
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 20px; */
+
   }
 
-  .section-member {
-    width: 70%;
+  .spotlight {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    height: auto;
+    background-color: #fff;
+    color:  rgba(39, 71, 84, 0.65);
+    box-shadow: 3px 3px 20px rgba(39, 71, 84, 0.95);
+    border-radius: 32px;
+    border: 3px  var(--secondary-color) solid;
+    margin : 0 auto;
+    padding: 10px;
+    margin-top: 20px;
+    
+ 
+
+  }
+
+
+  .spotlight p{
+    padding :3px;
+  }
+  .section-spotlight {
+    width: 80%;
     margin:0 auto;
     display: grid;
-    /* grid-column: 6/16; */
-    grid-template-columns: repeat(3, 1fr);
-    /* gap: 20px; */
-    /* Adjust the gap according to your design */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
   }
 
-  .card,
-  .member p {
+.spotlight img{
+    margin: 0 auto;
+    height: auto;
+    border-radius: 5px;
+    border: 3px solid  #aa7b57;  
+    box-shadow: 0 0 50px #333;
+    padding: 5px;
+  }
+
+
+  .section-footer {
+    width: 90%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+  }
+
+  .card    p {
     letter-spacing: 1.3px;
      margin : 0 auto;
      width: 100%;
+     height: auto;
   }
 
   footer p {
@@ -110,8 +144,6 @@
   #becomeamember {
     background-color: var(--secondary-color);
     color: #fff;
-    /* width: 14rem;
-    height: 3rem; */
     position: absolute;
     top: 0px;
     right: 0rem;
@@ -127,6 +159,7 @@
 
   #media {
     display: flex;
+    height: 50px;
     /* padding: 5px; */
     position: absolute;
     top: 0px;
@@ -140,6 +173,7 @@
   }
 
   /* ************************************************************* */
+  /* DISCOVER */
 
   .sidebar {
     width: 90%;
@@ -161,14 +195,16 @@
   #container-images {
     margin-top: 15px;
     width: 80%;
-    /* margin-right: auto; */
     background-color: var(--body-background-color);
 
     margin-bottom: 15px;
     text-align: center;
   }
+  #container-images p {
 
-  picture {
+  }
+
+  #container-images picture {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,9 +230,6 @@
 
   }
 
-  .card-barside {
-    height: auto;
-  }
 
   .card-barside h2 {
     font-size: 1.4rem;
@@ -210,13 +243,14 @@
   .card-barside p {
     font-size: 0.9rem;
   }
+  /* ************************************************************* */
+
 
   /* 3 columns in main */
   .section-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    /* Adjust the gap according to your design */
   }
 
   .card {
@@ -239,4 +273,8 @@
   #all {
     margin: 0 auto;
   }
+
+
+
+  
 }

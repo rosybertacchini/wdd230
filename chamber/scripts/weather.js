@@ -24,10 +24,12 @@ const displayResults = (data)  => {
 
     data.weather.forEach(w => {   // can be more then one eather event
         currentTemp.innerHTML = `${data.main.temp}&deg;C`;  // caracter especial para grados
+        //const windchill = calculateWindChillFactor(`${data.main.temp}`, `${data.wind.speed}`);
+        calculateWindChill(`${data.main.temp}`, `${data.wind.speed}`);
         const iconsrc = `https://openweathermap.org/img/w/${w.icon}`;
         weatherIcon.setAttribute('src', iconsrc+ ".png");
         weatherIcon.setAttribute('alt',"Weather Icon");
-        captionDesc.textContent = capitalizeEachWord(`${w.description}`);
+        captionDesc.textContent = capitalizeEachWord(`${w.description}`) ;
     });
 
 }
@@ -37,4 +39,22 @@ function capitalizeEachWord(str) {
     return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
   }
   
+ // **************************** calculate WIND CHILL  *************************************** 
+
+function calculateWindChill(temperature, windSpeed){
+
+    const result =  document.getElementById('result');
+    var windChill = "";
+
+    if( temperature <= 10  ||  windChill >= 4.82) {
+        var windChill = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
+        result.innerText = "Wind Chill Factor: " + windChill.toFixed(2) + "°C";
+    } else {
+        result.innerText = "There is no conditions to have wind chill";
+        result.style.color = "red";
+    }
+}       
+// **************************** calculate WIND CHILL END  ***************************************
+
+
 apiFetch()

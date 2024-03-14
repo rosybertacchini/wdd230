@@ -121,14 +121,6 @@ footer {
   background-color: var(--accent1-color);
 }
 
-footer {
-  /* display: flex;
-	flex-direction: row; */
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  /* Adjust the gap according to your design */
-  color: #fff;
-}
 
 footer p span last {
   padding: 10px;
@@ -136,25 +128,21 @@ footer p span last {
   color: #fff;
 }
 
-/* .events li, ul {
-  list-style-type: none;
-} */
-
-
-
-
 header {
   grid-column: 1/21;
   background-color: var(--accent1-color);
 }
 
-#wellcome {
-  grid-column: 8/14;
+.wellcome {
+  /* background-color: pink; */
+  margin :0 auto;
+  width: 70%;
+  max-width: fit-content;
+  padding :10px;
 }
 
 
-.card,
-.member {
+.card {
   text-align: center;
   font-family: var(--paragraph-font);
   height: 250px;
@@ -165,9 +153,6 @@ header {
   box-shadow: 3px 3px 20px rgba(39, 71, 84, 0.95);
   border-radius: 32px;
   border: 3px  var(--secondary-color) solid;
-
-
-  
 }
 
 .section-cards {
@@ -202,38 +187,6 @@ header {
 
 /* ************************************************************* */
 
-.sidebar {
-  text-align: right;
-  display: flex;
-  width: 400px;
-  margin: 0 auto;
-}
-
-.card-barside {
-  background-color: #264653;
-  height: 200px;
-  color: #fff;
-
-  padding: 20px 10px 10px;
-  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.65);
-  border-radius: 32px;
-  border: 1px #c2c2c2 solid;
-
-}
-
-.laziImages {
-  width: 10%;
-  margin: 0 0 10px 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-#message {
-  margin-top: 10px;
-  font-family: var(--paragraph-font);
-  font-style: italic;
-  color: var(--accent2-color);
-}
 
 
 /*   **********   Joing us ********** */
@@ -262,6 +215,44 @@ header {
   }
 
 /* ****************************************************** */
+/* discover */
+.sidebar {
+  text-align: right;
+  display: flex;
+  /* width: 400px; */
+  margin: 0 auto;
+  height: auto;
+}
+
+.card-barside {
+  background-color: #264653;
+  height: 200px;
+  color: #fff;
+
+  padding: 20px 10px 10px;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.65);
+  border-radius: 32px;
+  border: 1px #c2c2c2 solid;
+  padding :10px;
+  height: auto;
+
+}
+
+.laziImages {
+  /* width: 10%; */
+  margin: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#message {
+  margin-top: 10px;
+  font-family: var(--paragraph-font);
+  font-style: italic;
+  color: var(--accent2-color);
+}
+
+/* ****************************************************** * /
 /* hero image */
 
 #first-section {
@@ -402,22 +393,15 @@ form input.submitBtn {
 
 } 
 #directoryCards{
-
-
-
   font-size: .8rem ;
    display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
   align-items: center;
   justify-content: center;
   padding: 10px;
-
 }   
 #grid, #list {
   width : 40px;
   height: 40px;
-  
-
 }   
 
 #directoryContainer section {
@@ -442,3 +426,4 @@ form input.submitBtn {
 
 
 }
+

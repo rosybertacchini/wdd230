@@ -19,11 +19,6 @@
   <link rel="stylesheet" type="text/css" media="screen" href="../chamber/styles/larger.css" />
   <link rel="fonts" href="https://fonts.googleapis.com/css?family=Sofia" />
   <link rel="icon" href="../chamber/favicon-16x16.png" />
-
-
-  
-
-
 </head>
 
 <body>
@@ -47,7 +42,7 @@
       <a href="join.html" id="becomeamember" class="button">BECOME A MEMBER</a>
     </nav>
   </header>
-  <main >
+  <main id="main">
     <section id="first-section">
     <div class="hero-container">
       <img class="hero-image" src="../chamber/images/canaco-building.webp" alt="Hero Image">
@@ -56,10 +51,7 @@
         Your Community!</div>
     </div>
     </section>
-
-
-
-    <section id="wellcome">
+    <section class="wellcome">
       <p>
         We are delighted to extend a warm greeting to you as you explore the dynamic business landscape of our vibrant
         community. The Tijuana Chamber of Commerce is your gateway to a network of opportunities, resources, and
@@ -69,16 +61,7 @@
         small businesses, and established enterprises can connect, grow, and succeed. Our commitment is to serve as a
         catalyst for economic development, innovation, and prosperity.
       </p>
-      <div id="databox">
-        <span >Temperature Celsius:
-          <input type="number" id="temperature" >
-        </span>
-        <br>
-        <span  >Wind Speed in km/h: <input type="number" id="windSpeed" >
-        </span>
-        <br/>
-        <button type="button" onclick="calculateWindChill()">Calculate Wind Chill</button>        
-      </div>
+
        
     </section>
     <div class="section-cards">
@@ -95,42 +78,56 @@
         <h2>Weather</h2>
         <br>
         <div id="weather">
-          <p>Weather in Tijuana Baja California - MEXICO</p>
-          <p id="result"></p>
+          <p>The current temperature</p>
+          <p>in Tijuana, BC Mexico is <span id = "current-temp"></span></p>
+          <figure>
+              <img id="weather-icon" src="" alt="">
+              <figcaption></figcaption>
+          </figure>
         </div> 
+        <div id="result" ></div>
       </section>
     </div>
-    <!-- ------------------------------------------------------------ -->
     <br>
     <hr />
     <br>
-    <p id="p-information">
+    <section class="wellcome">
+    <p >
       Whether you are a startup, a growing enterprise, or an established business, the Tijuana Chamber of Commerce is dedicated to providing the support and resources you need to thrive. Join us in building a stronger, more vibrant business community.
       Explore the possibilities, connect with fellow entrepreneurs, and unlock the full potential of your business journey with the Tijuana Chamber of Commerce.
       We look forward to welcoming you to our dynamic business community!
     </p>
+  </section>
     <br>
     <h2 id="spotlights">Members Spotlights</h2>
-    <div class="section-member">
-      <section class="member">
+    <div class="section-spotlight">
+      <section class="spotlight">
         <p>
-          spotlight
+          Connecting Communities
         </p>
+
+        <picture>
+          <img src="images/chamberCard01.jpg" alt =""
+            loading="lazy"
+          />
+        </picture>
       </section>
-      <section class="member">
+      <section class="spotlight">
         <p>
-          spotlight
+          Building Careers
         </p>
+        <img src="images/chamberCard02.jpg" alt ="">
       </section>
-      <section class="member">
+      <section class="spotlight">
         <p>
-          spotlight
+          Driving Growth
         </p>
+        <img src="images/chamberCard03.jpg" alt ="">
       </section>
     </div>
 
     <section class="section-map">
-      <hr />
+      <!-- <hr /> -->
       <br />
       <h3>Map</h3>
       <br />
@@ -142,43 +139,27 @@
       </div>
     </section>
   </main>
+
   <footer>
-    <section>
-      <p>This site is a projet for BYUI class WDD230</p>
-    </section>
-    <section>
-      <p>Rosy Bertacchini &copy; <span id="year"></span></p>
-      <p>City: Tijuana</p>
-      <p>Municipality: Baja California Mexico</p>
-      <p>Xavier Villaurrutia 1271, Zona Urbana Rio Tijuana, 22010 </p>
-    </section>
-    <section>
-      <p id="lastModified"></p>
-    </section>
-    
-    
+      <section class="section-footer">
+        <section>
+          <p>Rosy Bertacchini &copy; <span id="year"></span></p>
+          <p id="lastModified"></p>          
+        </section> 
+        <section>
+          <p>City: Tijuana</p>
+          <p>Municipality: Baja California Mexico</p>
+          <p>Address: Xavier Villaurrutia 1271, Zona Urbana Rio Tijuana, 22010 </p>          
+        </section>              
+        <section>
+         <p>This site is a projet for BYUI class WDD230</p>
+        </section>
 
-    
-
-
-
-  </main>
-  <footer>
-    <section>
-      <p>This site is a projet for BYUI class WDD230</p>
-    </section>
-    <section>
-      <p>Rosy Bertacchini &copy; <span id="year"></span></p>
-      <p>City: Tijuana</p>
-      <p>Municipality: Baja California Mexico</p>
-      <p>Xavier Villaurrutia 1271, Zona Urbana Rio Tijuana, 22010 </p>
-    </section>
-    <section>
-      <p id="lastModified"></p>
-    </section>
+      </section>
   </footer>
   <script src="../chamber/scripts/base.js"></script>
   <script src="../chamber/scripts/getdates.js"></script>
   <script src="../chamber/scripts/windchill.js"></script>
+  <script src="../chamber/scripts/weather.js"></script>
 </body>
 </html>
