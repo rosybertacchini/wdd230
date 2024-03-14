@@ -56,4 +56,7 @@ function calculateWindChill(temperature, windSpeed){
 // **************************** calculate WIND CHILL END  ***************************************
 
 
+
+
+
 apiFetch()
