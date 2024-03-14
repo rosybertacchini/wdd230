@@ -23,8 +23,7 @@ async function apiFetch() {
 const displayResults = (data)  => {
 
     data.weather.forEach(w => {   // can be more then one eather event
-        currentTemp.innerHTML = `${data.main.temp}&deg;C`;  // caracter especial para grados
-        //const windchill = calculateWindChillFactor(`${data.main.temp}`, `${data.wind.speed}`);
+        currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;C`;  // caracter especial para grados
         calculateWindChill(`${data.main.temp}`, `${data.wind.speed}`);
         const iconsrc = `https://openweathermap.org/img/w/${w.icon}`;
         weatherIcon.setAttribute('src', iconsrc+ ".png");
