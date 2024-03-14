@@ -83,10 +83,8 @@ const displayMembers = (members,view) => {
 function selectView(view){
     if (view === 'row') {
         directoryCards.style.gridTemplateColumns = 'repeat(auto-fit, minmax(350px, 1fr)';
-         // alert("row");
     } else {               
         directoryCards.style.gridTemplateColumns = '1fr';
-         // alert("column");
     } 
 }
 
