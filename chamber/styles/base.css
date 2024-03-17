@@ -427,5 +427,9 @@ form input.submitBtn {
 
 }
 
+#weather div ol li{
+  color:#fff;
+  font-size: .5rem ;
+}
 
 /* ***************************************************   */

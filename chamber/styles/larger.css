@@ -260,7 +260,8 @@
     font-family: var(--paragraph-font);
     font-size: 1.7ex;
     height: auto;
-    max-width: 70%;
+    width: 280px;
+    max-width: 350px ;
   }
   .card p {
     font-size: 0.8rem;
