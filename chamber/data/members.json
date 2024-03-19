@@ -15,7 +15,7 @@
             "membershipLevel": "Gold"
         },
         {
-            "name" : "Elmek Inc",
+            "name" : "Elemek Inc",
             "address" : {
                 "address1" : "900 Lane Av",
                 "address2" : "Suite 170",
@@ -97,7 +97,7 @@
                     "phoneNumbers":["5558096555"],
                     "url": "https://www.profuturo.mx/",
                     "image" :  "images/logoProfuturo.JPG",
-                    "membershipLevel": "Bronze"
+                    "membershipLevel": "Gold"
                
         }
     ] 

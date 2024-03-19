@@ -292,8 +292,6 @@
     margin: 0 auto;
   }
 
-
-
    /* hero image */
    .hero-text {
     font-size: 1.4rem;
@@ -303,18 +301,20 @@
 .spotlight {
   background-color: #fff;/*  #f4a261; */
   padding: 10px;
-  width: 100%;
-  max-width: 200px;
+
 }
 .spotlight p{
   padding :3px;
   font-size: small;
 }
 .section-spotlight {
-  /* width: 50%; */
+  /* width: 100%; */
   margin:0 auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+justify-items: center;
+align-items: center;
 }
 
 .spotlight img{

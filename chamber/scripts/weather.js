@@ -50,6 +50,7 @@ const displayResults = (data)  => {
         const iconsrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}`;
 
         currentTemp.innerHTML = `${Math.round(temperature)}&deg;C`;  // caracter especial para grados
+        calculateWindChill(temperature, `${forecast.wind.speed}`);
         weatherIcon.setAttribute('src', iconsrc+ ".png");
         weatherIcon.setAttribute('alt',"Weather Icon");
         figure.appendChild( weatherIcon);
