@@ -21,7 +21,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box;     para laFORMA */   
+  /* box-sizing: border-box;     para laFORMA */
 }
 
 h1 {
@@ -34,7 +34,6 @@ h2 {
   text-align: left;
   margin: 0.5rem;
 }
-
 /* just a wayfinding symbol for the user */
 #map::before {
   content: "📍 ";
@@ -49,6 +48,7 @@ h2 {
 }
 
 .navigation ul {
+  margin: 0;
   text-align: center;
   text-decoration: none;
   list-style-type: none;
@@ -65,8 +65,14 @@ h2 {
   color: #fff;
 }
 
-.navigation li a:hover {
-  background-color: var(--secondary-color);
+
+.navigation li a:hover{
+  background-color: var(--secondary-color); 
+  color: #fff;
+}
+
+.active{
+  background-color: var(--secondary-color); 
   color: #fff;
 }
 
@@ -153,6 +159,15 @@ header {
   box-shadow: 3px 3px 20px rgba(39, 71, 84, 0.95);
   border-radius: 32px;
   border: 3px  var(--secondary-color) solid;
+
+
+
+
+
+
+
+
+
 }
 
 .section-cards {
@@ -198,7 +213,7 @@ header {
   margin: 0 auto;;
   position: relative;
   width : 80%;
-  
+
 }
 
 .registration {
@@ -367,7 +382,7 @@ form input.submitBtn {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-       margin : 0 auto; 
+       margin : 0 auto;
 }
 #directoryBody {
   text-align: center;
@@ -391,18 +406,18 @@ form input.submitBtn {
 
   padding: 0;
 
-} 
+}
 #directoryCards{
   font-size: .8rem ;
    display: grid;
   align-items: center;
   justify-content: center;
   padding: 10px;
-}   
+}
 #grid, #list {
   width : 40px;
   height: 40px;
-}   
+}
 
 #directoryContainer section {
   display: flex;
@@ -414,7 +429,7 @@ form input.submitBtn {
   margin: 5px auto;
   padding: 40px;
   width: auto;
-  background-color: #e1c693;
+  background-color: #fff;
 
 
   width: 300px;
@@ -432,8 +447,15 @@ form input.submitBtn {
   font-size: .5rem ;
 }
 
-#goldMembers
+#goldMembersList li, ol {
+  text-decoration: none;
+  font-size: 1rem ;
 
+}
 
+figcaption {
+ color: #fff;
+
+}
 
 /* ***************************************************   */

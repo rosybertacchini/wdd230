@@ -44,10 +44,12 @@ const displayMembers = (members,view) => {
         let memberLevel = document.createElement('div');
 
         // build logo picture
-        logoImg.setAttribute('alt',  `${member.name}` );
+        logoImg.setAttribute('alt',  `${member.name} Logo` );
         logoImg.setAttribute('src',  `${member.image}` );
         logoImg.setAttribute('width', '120');
         logoImg.setAttribute('height', '40');
+        logoImg.style.borderRadius = '5px';
+
         // build business name
         businessName.innerHTML = `${member.name}`;
         // build url site
@@ -67,7 +69,7 @@ const displayMembers = (members,view) => {
         card.appendChild(city);
         card.appendChild(state);
 
-        phoneNumbers.innerHTML = 'Phones No: ';
+        phoneNumbers.innerHTML = 'Phone No: ';
         member.phoneNumbers.forEach((phoneNumber) => {
             phoneNumbers.innerHTML += `${phoneNumber}` + " | "
         });
