@@ -130,7 +130,7 @@
     padding: 1rem;
   }
 
-  .card    p {
+  .card p {
     letter-spacing: 1.3px;
      margin : 0 auto;
      width: 100%;
@@ -263,9 +263,9 @@
     width: 280px;
     max-width: 350px ;
   }
-  .card p {
-    font-size: 0.8rem;
-  }
+  /* .card p {
+    font-size: .9rem;
+  } */
 
   ul {
     text-decoration: none;

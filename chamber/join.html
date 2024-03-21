@@ -83,80 +83,85 @@
       </nav>
     </header>
     <main id="main">
-      <form method="get" action="thankyou.html">
+      <div id="joinUs">
+        <p>Thank you for taking the first step towards becoming a valued member of our Chamber of Commerce community! We're thrilled that you are joining us in our mission to Promoting Economic Development In our community.</p>
+        </div>
+      <div>
+        <form method="get" action="thankyou.html">
      
-        <fieldset>
-          <legend>Becoming a New Member</legend>
-          <label class="info"
-            >First Name* <input type="text" id="fname" name="fname" required />
-          </label>
-          <label class="info"
-            >Last Name* <input type="text" id="lname" name="lname" required />
-          </label>
-          <label class="info"
-            >Title Position*
-            <input type="text" id="position" name="position" required
-          /></label>
-          <label class="info"
-            >E-mail*
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/"
-              title="Please enter a valid email address"
-          /></label>
-          <label class="info"
-            >Mobile*
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              required
-              placeholder="1119992222"
-            />
-          </label>
-          <label class="info"
-            >Business / Organization's Name*
-            <input
-              type="text"
-              id="organization"
-              name="organization"
-              pattern="[a-zA-Z\- ]{7,}"
-              required
-            />
-          </label>
-          <label class="info"
-            >Member Level
-            <select name="subject">
-              <option value="">Please select One</option>
-              <option value="nonProfit-member">Software Development</option>
-              <option value="bronze-member">Creative Professional</option>
-              <option value="silver-member">Information Technology</option>
-              <option value="gold-member">Data Professional</option>
-            </select>
-          </label>
-          <p>
-            <label class="info" for="business-desc"
-              >Business Description<textarea
-                id="business-desc"
-                name="business-desc"
-              >
-              </textarea>
+          <fieldset>
+            <legend>Becoming a New Member</legend>
+            <label class="info"
+              >First Name* <input type="text" id="fname" name="fname" required />
             </label>
-          </p>
-          <input
-            type="hidden"
-            id="timestampInput"
-            name="timestampInput"
-            value=""
-          />
-          <input type="submit" value="Join Chamber" class="submitBtn" />          
-        </fieldset>
-
-        <!-- onclick="validateEmail()"     -->
-      </form>
+            <label class="info"
+              >Last Name* <input type="text" id="lname" name="lname" required />
+            </label>
+            <label class="info"
+              >Title Position*
+              <input type="text" id="position" name="position" required
+            /></label>
+            <label class="info"
+              >E-mail*
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/"
+                title="Please enter a valid email address"
+            /></label>
+            <label class="info"
+              >Mobile*
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="1119992222"
+              />
+            </label>
+            <label class="info"
+              >Business / Organization's Name*
+              <input
+                type="text"
+                id="organization"
+                name="organization"
+                pattern="[a-zA-Z\- ]{7,}"
+                required
+              />
+            </label>
+            <label class="info"
+              >Member Level
+              <select name="subject">
+                <option value="">Please select One</option>
+                <option value="nonProfit-member">Software Development</option>
+                <option value="bronze-member">Creative Professional</option>
+                <option value="silver-member">Information Technology</option>
+                <option value="gold-member">Data Professional</option>
+              </select>
+            </label>
+            <p>
+              <label class="info" for="business-desc"
+                >Business Description<textarea
+                  id="business-desc"
+                  name="business-desc"
+                >
+                </textarea>
+              </label>
+            </p>
+            <input
+              type="hidden"
+              id="timestampInput"
+              name="timestampInput"
+              value=""
+            />
+            <input type="submit" value="Join Chamber" class="submitBtn" />          
+          </fieldset>
+  
+          <!-- onclick="validateEmail()"     -->
+        </form>
+      </div>
     </main>
     <footer>
       <section class="section-footer">
