@@ -2,8 +2,7 @@ const currentTemp = document.querySelector("#current-temp");
 const icon = document.querySelector("#icon");
 const weather = document.querySelector("#weather");
 const weatherIcon = document.createElement("img");
-
-const textForcast = document.createElement("div");
+const textForcast = document.createElement("p");
 const captionDesc = document.querySelector("figcaption");
 const figure = document.querySelector("figure");
 
@@ -90,6 +89,7 @@ const displayResults = (data) => {
           capitalizeEachWord(`${weatherDescription}`);
         weatherDivForcast.style.color = "white";
         weatherDivForcast.style.textAlign = "left";
+
         weather.appendChild(weatherDivForcast);
         dateFlags[index] = true;
         console.log(forecast);
@@ -122,7 +122,7 @@ function calculateWindChill(temperature, windSpeed) {
     result.innerText = "Wind Chill Factor: " + windChill.toFixed(2) + "°C";
   } else {
     result.innerText = "There is no conditions to have wind chill";
-    result.style.color = "red";
+    result.style.color = "orange";
   }
 }
 // **************************** calculate WIND CHILL END  ***************************************

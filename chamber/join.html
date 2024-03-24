@@ -84,15 +84,20 @@
     </header>
     <main id="main">
       <div id="joinUs">
-        <p>Thank you for taking the first step towards becoming a valued member of our Chamber of Commerce community! We're thrilled that you are joining us in our mission to Promoting Economic Development In our community.</p>
-        </div>
+        <p>
+          Thank you for taking the first step towards becoming a valued member
+          of our Chamber of Commerce community! We're thrilled that you are
+          joining us in our mission to Promoting Economic Development In our
+          community.
+        </p>
+      </div>
       <div>
         <form method="get" action="thankyou.html">
-     
           <fieldset>
             <legend>Becoming a New Member</legend>
             <label class="info"
-              >First Name* <input type="text" id="fname" name="fname" required />
+              >First Name*
+              <input type="text" id="fname" name="fname" required />
             </label>
             <label class="info"
               >Last Name* <input type="text" id="lname" name="lname" required />
@@ -135,12 +140,20 @@
               >Member Level
               <select name="subject">
                 <option value="">Please select One</option>
-                <option value="nonProfit-member">Software Development</option>
-                <option value="bronze-member">Creative Professional</option>
-                <option value="silver-member">Information Technology</option>
-                <option value="gold-member">Data Professional</option>
+                <option value="nonProfit-member">NP Membership</option>
+                <option value="nonProfit-member">Gold Membership</option>
+                <option value="bronze-member">Bronze Membership</option>
+                <option value="silver-member">Silver Membership</option>
               </select>
+              <br />
+     
+              <br />
             </label>
+            <br />
+            <div>
+              *NP Membership is for NON PROFIT organizations and there is no
+              fee.
+            </div>
             <p>
               <label class="info" for="business-desc"
                 >Business Description<textarea
@@ -156,34 +169,78 @@
               name="timestampInput"
               value=""
             />
-            <input type="submit" value="Join Chamber" class="submitBtn" />          
+            <input type="submit" value="Join Chamber" class="submitBtn" />
           </fieldset>
-  
+
           <!-- onclick="validateEmail()"     -->
         </form>
       </div>
     </main>
+    <div class="section-cards">
+      <section class="card">
+        <h2>Weather</h2>
+        <br />
+        <div id="weather">
+          <p>The current temperature</p>
+          <p>in Tijuana, BC Mexico is <span id="current-temp"></span></p>
+          <br />
+          <figure>
+            <!-- <img id="weather-icon" src="" alt=""> -->
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        <br />
+        <p id="result"></p>
+      </section>
+
+
+
+    </div>
+    <div class="section-cards2">
+      <section class="card" id = "cardRight">
+        <h2>Upcoming Events</h2>
+        <br />
+        <div id="events">
+          <p>Business Networking Mixer</p>
+          <p>Trade Fair or Expo</p>
+          <p>Educational Workshop or Seminar</p>
+        </div>
+       </section>
+    </div>        
     <footer>
+      <section class="section-map">
+        <!-- <hr /> -->
+        <br />
+        <!-- <h3>Map</h3> -->
+        <br />
+        <div id="mapdiv" title="myFrame">
+          <span class="location">Our Location:</span>
+          <p>
+            <a id="map" href="https://maps.app.goo.gl/nzjvNEz9sb7hTpeS9"></a>
+          </p>
+        </div>
+      </section>
       <section class="section-footer">
         <section>
           <p>Rosy Bertacchini &copy; <span id="year"></span></p>
-          <p id="lastModified"></p>          
-        </section> 
+          <p id="lastModified"></p>
+        </section>
         <section>
           <p>City: Tijuana</p>
           <p>Municipality: Baja California Mexico</p>
-          <p>Address:Xavier Villaurrutia 1271, Zona Urbana Rio Tijuana, 22010 </p>          
-        </section>              
-        <section>
-         <p>This site is a projet for BYUI class WDD230</p>
+          <p>
+            Address: Xavier Villaurrutia 1271, Zona Urbana Rio Tijuana, 22010
+          </p>
         </section>
-
+        <section>
+          <p>This site is a projet for BYUI class WDD230</p>
+        </section>
       </section>
-  </footer>
-    <script src="../chamber/scripts/base.js"></script>
-    <script src="../chamber/scripts/getdates.js"></script>
-    <script src="../chamber/scripts/windchill.js"></script>
-    <script src="../chamber/scripts/date.js"></script>
-    
+    </footer>
+    <script src="scripts/base.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/weather.js"></script>
   </body>
 </html>

@@ -28,9 +28,17 @@ const displayMembers = (goldMembers) => {
 function displayRandomMember(goldMembers) {
   const randomIndex = Math.floor(Math.random() * goldMembers.length);
   const randomMember = goldMembers[randomIndex];
+  const memberIcon = document.createElement("img");
 
   const div = document.querySelector("#randomGoldMember");
-  div.innerHTML = "Read the successful story of our Member: " + `<a href="${randomMember.url}">${randomMember.name}</a>`;
+
+  memberIcon.setAttribute("src" , `${randomMember.image}`);
+  memberIcon.setAttribute("width" , "80%");
+  // memberIcon.setAttribute("src" , `${randomMember.image}`);
+ 
+  div.innerHTML = `<p>Read the successful story of our Member: </p>` + `<a href="${randomMember.url}">${randomMember.name}</a>`;
+  div.innerHTML = div.innerHTML  + `<br/> <br/>`;
+  div.appendChild(memberIcon);
 }
 
 

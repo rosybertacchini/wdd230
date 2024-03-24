@@ -21,28 +21,28 @@
     />
     <meta property="og:site_name" content="CANACO" />
     <meta property="og:image:type" content="image/jpeg" />
-    <link rel="stylesheet" href="../chamber/styles/normalize.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="../chamber/styles/base.css"
+      href="styles/base.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="../chamber/styles/small.css"
+      href="styles/small.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="../chamber/styles/larger.css"
+      href="styles/larger.css"
     />
 
     <link rel="fonts" href="https://fonts.googleapis.com/css?family=Sofia" />
-    <link rel="icon" href="../chamber/favicon-16x16.png" />
+    <link rel="icon" href="favicon-16x16.png" />
   </head>
 
   <body>
@@ -51,19 +51,19 @@
       <a href="https://twitter.com/"
         ><img
           id="twitter"
-          src="../chamber/images/twiter.png"
+          src="images/twiter.png"
           alt="Twitter Logo"
       /></a>
       <a href="https://facebook.com"
         ><img
           id="facebook"
-          src="../chamber/images/facebook.PNG"
+          src="images/facebook.PNG"
           alt="Facebook logo"
       /></a>
       <a href="https://youtube.com/"
         ><img
           id="youtube"
-          src="../chamber/images/youtube.PNG"
+          src="images/youtube.PNG"
           alt="Youtube Logo"
       /></a>
     </section>
@@ -81,37 +81,85 @@
         <a href="join.html" id="becomeamember" class="button">BECOME A MEMBER</a>
       </nav>
     </header>
-    <div id="displayOptIcons">
-      <img class = "OptIcons"  id="list" src="images/grid.jpg" alt="Column View" >
-      <img class = "OptIcons" id="grid" src="images/list.jpg" alt="Row View" >
-    </div>
+
     <main id="main">
-       <!-- <div id="message"></div> -->
-        <div id="directoryBody">
-          <div id="directoryContainer">
-            <div id="directoryCards"></div>
-          </div>
+      <div id="directoryBody">
+        <div id="displayOptIcons">
+          <img class = "OptIcons"  id="list" src="images/grid.jpg" alt="Column View" >
+          <img class = "OptIcons" id="grid" src="images/list.jpg" alt="Row View" >
+        </div>      
+        <!-- <div id="message"></div> -->
+        
+            <div id="directoryContainer">
+              <div id="directoryCards"></div>
+            </div>
         </div>
     </main>
+    <div class="section-cards">
+      <section class="card">
+        <h2>Weather</h2>
+        <br />
+        <div id="weather">
+          <p>The current temperature</p>
+          <p>in Tijuana, BC Mexico is <span id="current-temp"></span></p>
+          <br />
+          <figure>
+            <!-- <img id="weather-icon" src="" alt=""> -->
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        <br />
+        <p id="result"></p>
+      </section>
+
+
+
+    </div>
+    <div class="section-cards2">
+      <section class="card" id = "cardRight">
+        <h2>Upcoming Events</h2>
+        <br />
+        <div id="events">
+          <p>Business Networking Mixer</p>
+          <p>Trade Fair or Expo</p>
+          <p>Educational Workshop or Seminar</p>
+        </div>
+       </section>
+    </div>    
     <footer>
+      <section class="section-map">
+        <!-- <hr /> -->
+        <br />
+        <!-- <h3>Map</h3> -->
+        <br />
+        <div id="mapdiv" title="myFrame">
+          <span class="location">Our Location:</span>
+          <p>
+            <a id="map" href="https://maps.app.goo.gl/nzjvNEz9sb7hTpeS9"></a>
+          </p>
+        </div>
+      </section>
       <section class="section-footer">
         <section>
           <p>Rosy Bertacchini &copy; <span id="year"></span></p>
-          <p id="lastModified"></p>          
-        </section> 
+          <p id="lastModified"></p>
+        </section>
         <section>
           <p>City: Tijuana</p>
           <p>Municipality: Baja California Mexico</p>
-          <p>Address: Xavier Villaurrutia 1271, Zona Urbana Rio Tijuana, 22010 </p>          
-        </section>              
-        <section>
-         <p>This site is a projet for BYUI class WDD230</p>
+          <p>
+            Address: Xavier Villaurrutia 1271, Zona Urbana Rio Tijuana, 22010
+          </p>
         </section>
-
+        <section>
+          <p>This site is a projet for BYUI class WDD230</p>
+        </section>
       </section>
-  </footer>
-    <script src="../chamber/scripts/base.js"></script>
-    <script src="../chamber//scripts/directory.js"></script>
+    </footer>
+    <script src="scripts/base.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/weather.js"></script>
 
   </body>
 </html>

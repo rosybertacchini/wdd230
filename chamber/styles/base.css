@@ -1,19 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Koh+Santepheap&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Montserrat+Alternates&display=swap");
 
 :root {
   --primary-color: #2a9d8f;
   --secondary-color: #264653;
-  /* cambio #2B2146*/
   --accent1-color: #f4a261;
   --accent2-color: #e76f51;
   --body-background-color: #fff;
-  /* --paragraph-font: "Koh+Santepheap", sans-serif; */
   --paragraph-font: "Montserrat", "Koh-Santepheap", sans-serif;
 
   /* menu mobile*/
-  --menu-text-color: #f4a261;
-  --menu-background: rgb(39, 71, 84);
+  /* --menu-text-color: #f4a261;
+  --menu-background: rgb(39, 71, 84); */
 }
 
 * {
@@ -27,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   color: #fff;
   text-align: left;
   margin: 0.5rem;
@@ -68,11 +65,13 @@ h2 {
   /* background-color: var(--secondary-color);  */
   background-color:  #426775;
   color: #fff;
+  border-radius: 5px;
 }
 
 .active{
   background-color: var(--secondary-color); 
   color: #fff;
+  border-radius: 5px;
 }
 
 /* ****************************************** */
@@ -99,11 +98,11 @@ body {
   grid-column: 6/16;
 }
 
+
 main {
-  grid-column: 1/21;
+  /* grid-column: 6/16; */
   text-align: center;
 }
-
 header {
   grid-column: 1/21;
   background-color: var(--accent1-color);
@@ -111,22 +110,18 @@ header {
 
 p {
   margin: 5px;
-  font-size: clamp(0.9rem, 1vw, 2rem);
+  font-size: clamp(0.9rem, 1vw, 1.4rem);
   font-family: var(--paragraph-font);
   text-align: center;
   line-height: 1.5;
-  color : #264653;;
+  /* color : #264653; */
 }
-.card p {
-  color: #fff;
-  font-size: .9rem;
-}
+
 
 footer {
   grid-column: 1/21;
-  background-color: var(--accent1-color);
+  background-color: #f4a261;
 }
-
 
 footer p span last {
   padding: 10px;
@@ -142,40 +137,12 @@ header {
 .wellcome {
   /* background-color: pink; */
   margin :0 auto;
-  width: 75%;
+  width: 100%;
   max-width: fit-content;
   padding :10px;
 }
 
-
-.card {
-  text-align: center;
-  font-family: var(--paragraph-font);
-  height: 250px;
-  background-color:  rgba(39, 71, 84, 0.65);
-  margin: 20px;
-  color: var(--secondary-color);
-  padding: 20px 10px 10px;
-  box-shadow: 3px 3px 20px rgba(39, 71, 84, 0.95);
-  border-radius: 32px;
-  border: 3px  var(--secondary-color) solid;
-
-}
-
-.section-cards {
-  margin: 20px;
-}
-
-.section-cards h2 {
-  font-size: clamp(0.6rem, 2.4vw, 1.3rem);
-}
-
-.section-cards p {
-  font-size: clamp(0.7rem, 2.4vw, 1rem);
-  text-align: left;
-}
-
-#mode {
+de {
   position: absolute;
   top: 3rem;
   right: 2rem;
@@ -219,6 +186,7 @@ header {
 
 #container-cards p {
   color :#fff;
+  padding: 10px;
   }
 
 /* ****************************************************** */
@@ -226,17 +194,16 @@ header {
 .sidebar {
   text-align: right;
   display: flex;
-  /* width: 400px; */
   margin: 0 auto;
   height: auto;
+
 }
 
 .card-barside {
   background-color: #264653;
-  height: 200px;
+  /* width: 100%;
+  max-width: 390px; */
   color: #fff;
-
-  padding: 20px 10px 10px;
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.65);
   border-radius: 32px;
   border: 1px #c2c2c2 solid;
@@ -339,9 +306,6 @@ form  input, label , textarea{
   background-color: rgba(110, 101, 81, 0.1);
 }
 
-
-
-
 form  label.info{
   background-color: #fff;
   border: 0;
@@ -377,12 +341,10 @@ form input.submitBtn {
        margin : 0 auto;
 }
 #directoryBody {
+  grid-column: 1/21;
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: rgb(29, 25, 86);
-  border: 0px solid #163384;
-  box-shadow: 5px 5px 10px #6f7364;
   margin: 0 auto;
   padding: 0;
 }
@@ -393,11 +355,7 @@ form input.submitBtn {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  border: 0px solid #e1c693;
-  box-shadow: 5px 5px 10px #6f7364;
-
   padding: 0;
-
 }
 #directoryCards{
   font-size: .8rem ;
@@ -422,31 +380,29 @@ form input.submitBtn {
   padding: 40px;
   width: auto;
   background-color: #fff;
-
-
   width: 300px;
   height: auto;
   border-radius: 5%;
   border: 0px solid #ccc;
   box-shadow: 0 0 40px #2e2c2c;
   padding: 10px;
-
-
 }
 
 #weather div ol li{
   color:#fff;
-  font-size: .5rem ;
-}
+  font-size: .9rem ;
 
+}
 
 figcaption {
  color: #fff;
 
 }
 
+/* ****** JOIN US  *********** */
 
 #joinUs{
+  height: auto;
   padding : 1rem;
   margin : 0 auto;
   max-width: 80%;
@@ -457,24 +413,68 @@ figcaption {
 
 /* ****** GOLD MEMBERS  *********** */
 
-#section-goldMembers {
-
-  box-shadow: 0 0 10px #2e2c2c;
-
+.cardGold {
+  text-align: center;
+  font-family: var(--paragraph-font);
+  width: 300px;
+  
+  height: 350px;
+  background-color: rgba(39, 71, 84);
+  margin: 10px;
+  color: var(--secondary-color);
+  padding: 20px 10px 10px;
+  box-shadow: 3px 3px 20px rgba(39, 71, 84, 0.95);
+  border-radius: 32px;
 
 }
-#randomGoldMember {
-  width: 310px;
-max-width: 380px;
-}
+
 #goldMembersList li, ol ,a {
   text-align: left;
   font-size: 1.2rem ;
   max-width: 80%;
-  /* background-color: #f4a261; */
   margin: 0 auto;
   text-decoration: none;
-  color :  #e76f51;
+  color : orange;
 }
 
-/* ***************************************************   */
+
+
+/* ****************************** new cards *************************************** */ 
+.card p, .card2 p , li{
+  color: #fff;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+}
+
+.card {
+  text-align: center;
+  font-family: var(--paragraph-font);
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  max-height: 550px;
+  background-color: var(--secondary-color);
+  margin: 10px;
+  color: var(--secondary-color);
+  box-shadow: 3px 3px 20px rgba(39, 71, 84, 0.95);
+  border-radius: 32px;
+
+}
+.section-cards ,  .section-cards2 {
+  grid-column: 2/19;
+  margin : 0 auto;
+}
+
+#cardRight {
+  grid-column: 2/19;
+   grid-row: 5/6;
+
+}
+.section-cards h2, .section-cards2 h2 {
+  font-size: clamp(0.8rem, 2.4vw, 1.3rem);
+}
+
+/* ********************************************************************* */
+
+
+
+
