@@ -1,6 +1,6 @@
 // get element to display the message
 const message = document.querySelector("#message");
-alert("hola");
+
 
 // Function to get the current date in a formatted string
 function getCurrentDate() {
