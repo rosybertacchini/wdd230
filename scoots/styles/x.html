@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+
+      .card {
+      width: 250px;
+      height: 250px;
+      background-color: #FACE66;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+
+      flex: 0 0 calc(33.33% - 20px); /* Adjust card width for responsiveness */
+  margin: 10px;
+
+  
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    card-description {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .card-img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      
+    }
+      
+    #cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust max-width as needed */
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: calc(50% - 20px); /* Adjust card width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex-basis: calc(100% - 20px); /* Adjust card width for even smaller screens */
+  }
+}
+
+    </style>
+</head>
+<body>
+
+
+<main>
+  <div id="cards">
+    <div class="card">
+        <div class="card-content">
+          <h2 class="card-title">Beautiful Card Design1</h2>
+          <img class="card-img" src="images/metropolitan.jpg" alt="Placeholder Image">
+          <p class="card-description">This is a stunning card design showcasing the combination of colors #FACE66 and #333. Hover over the card to see the effect!</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+          <h2 class="card-title">Beautiful Card Design2</h2>
+          <img class="card-img" src="images/pcx150.jpg" alt="Placeholder Image">
+          <p class="card-description">This is a stunning card design using  #FACE66 and #333. Hover over the card to see the effect!</p>
+        </div>
+    </div>    
+    <div class="card">
+        <div class="card-content">
+          <h2 class="card-title">Beautiful Card Design3</h2>
+          <img class="card-img" src="images/pixlr-image-generator.png" alt="Placeholder Image">
+          <p class="card-description">This is a stunning card design using  #FACE66 and #333. Hover over the card to see the effect!</p>
+        </div>
+    </div>  
+    <div class="card">
+        <div class="card-content">
+          <h2 class="card-title">Beautiful Card Design4</h2>
+          <img class="card-img" src="images/WRANGLER-2doors.JPG" alt="Placeholder Image">
+          <p class="card-description">This is a stunning card design using  #FACE66 and #333. Hover over the card to see the effect!</p>
+        </div>
+    </div>                    
+</div> 
+
+  
+
+<footer>
+  <p>Footer content goes here.</p>
+</footer>
+
+</body>
+</html>

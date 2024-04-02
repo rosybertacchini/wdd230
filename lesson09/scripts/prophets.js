@@ -7,10 +7,6 @@ async function getProphetData() {
     const data = await response.json();
     //console.table(data.prophets);
     displayProphets(data.prophets);
-
-
-
-
 }
 
 

@@ -1,0 +1,80 @@
+{
+    "scooters": [
+      {
+        "category": "Honda Motor Scooters",
+        "inventory": [
+          {
+            "title": "Honda Metro Scooter",
+            "imgPath": "images/metropolitan.jpg",
+            "desc": "This scoot is a (49cc) for 1 person ",
+            "max-persons": 1,
+            "half-day-res": "$ 20.00",
+            "full-day-res": "$ 30.00",
+            "half-day-w-in": "$ 25.00",
+            "full-day-w-in": "$ 35.00"
+          },
+          {
+            "title": "Honda Dio Scooter",
+            "imgPath": "images/metropolitan.jpg",
+            "desc": "This scoot is a (110cc)  for 2 person ",
+            "max-persons": 1,
+            "half-day-res": "$ 30.00",
+            "full-day-res": "$ 40.00",
+            "half-day-w-in": "$ 35.00",
+            "full-day-w-in": "$ 45.00"
+          },
+          {
+            "title": "Honda PCX150 Scooter",
+            "imgPath": "images/metropolitan.jpg",
+            "desc": "This Pioneer is a (149cc)  for 2 person ",
+            "max-persons": 1,
+            "half-day-res": "$ 40.00",
+            "full-day-res": "$ 50.00",
+            "half-day-w-in": "$ 45.00",
+            "full-day-w-in": "$ 55.00"
+          }
+        ]
+      },
+      {
+        "category": "Side-by-Side ATVs",
+        "inventory": [
+          {
+            "title": "Honda Pioneer 1000 ",
+            "imgPath": "images/metropolitan.jpg",
+            "desc": "This Jeep is for 4 person ",
+            "max-persons": 1,
+            "half-day-res": "$ 50.00",
+            "full-day-res": "$ 70.00",
+            "half-day-w-in": "$ 0.00",
+            "full-day-w-in": "$ 80.00"
+          }
+        ]
+      },
+      {
+        "category": "Jeeps",
+        "inventory": [
+          {
+            "title": "Jeep Wrangler - 4 door",
+            "imgPath": "images/metropolitan.jpg",
+            "desc": "This Jeep is a (49cc) for 1 person ",
+            "max-persons": 1,
+            "half-day-res": "$ 70.00",
+            "full-day-res": "$ 100.00",
+            "half-day-w-in": "$ 85.00",
+            "full-day-w-in": "$ 125.00"
+          },
+          {
+            "title": "Jeep Wrangler - 2 door ",
+            "imgPath": "images/metropolitan.jpg",
+            "desc": "This scoot is open air, manuel for 4 person",
+            "max-persons": 4,
+            "half-day-res": "$ 60.00",
+            "full-day-res": "$ 85.00",
+            "half-day-w-in": "$ 70.00",
+            "full-day-w-in": "$ 90.00"
+          }
+        ]
+      }
+    ]
+  }
+  

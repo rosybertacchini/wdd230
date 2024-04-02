@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* **************************  HERO IMAGES  ************************** */
+/* Ensuring full width for images */
+#header-container img {
+  max-width: 100%;
+  display: block; /* To remove extra spacing below the image */
+}
+
+/* Basic styling for header */
+header {
+  /* background-color: #333;
+  color: #fff;
+  text-align: center;
+  z-index: 1000;  */
+
+
+
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  z-index: 1000; 
+
+
+  
+}
+
+/* **************************   NAVIGATION ************************** */
+.navigation{
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li {
+  margin: 0 5px;
+  padding: 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navigation a {
+	display: none;
+}
+
+.navigation li:hover {
+  background-color:   #FACE66;
+  color: #fff;
+  border-radius: 3px;
+
+}
+
+/* **************************  MAIN  ************************** */
+main {
+  padding-top: 100px;
+
+  /* display:grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(10,1fr); */
+  background-color:  #ecd397;
+  /* grid-column: 2/8; */
+  /* overflow:hidden; */
+}
+
+
+
+
+/* **************************  MENU ************************** */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #FACE66;
+	color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+ }
+
+.open a {
+  display: block;
+}
+
+
+/* Mobile view navigation ************************************/
+@media (max-width: 37.5em) {
+   
+  .navigation.open {
+    text-align: left;
+    background-color:  #FACE66;
+    opacity: 0.81;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: 1;
+    border-radius: 0px 5px 5px 5px;
+  }
+
+  body {
+    background-color: #FDFBF7;
+  }
+
+  #header-container {
+    grid-column: 1/11;
+    grid-row: 2/3;
+  }
+
+  /* desaparecer en mobil */
+  #header-container #logo {
+    display: none;
+  }
+  .hero-text {
+    display: none;
+  }
+  /* ******************* */
+
+  #logo  {
+    display :none;
+  }
+}
+
+
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+	
+  .navigation ul li {
+    display: inline-block;
+  }
+
+  .navigation {
+    /* Fix the navigation menu */
+    position: fixed; 
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make it full width */
+    text-align: center; /* Center align menu items */
+  }
+
+  nav {
+    width: 100%;
+    
+  }
+
+  #companyName{
+    position: absolute; 
+    top: 0px;
+    left: 90px;
+    color: #FACE66;
+    z-index: 0;
+    font-size:clamp(1.3rem, 2vw , 2rem); 
+    font-family: "Sofia", sans-serif;
+  }
+
+  .slogan {
+    width: 100;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: #353333; /* Text color */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optional */
+    border-radius: 10px;
+    z-index: 0;
+    font-weight: bold;
+    font-size:clamp(1.5rem, 2vw , 2rem); 
+    font-family: sans-serif;
+  }
+
+  a {
+    font-size:clamp(.8rem, 2vw , 1.1rem); 
+  }
+
+ #logo {
+    position: absolute;
+    top : 0px;
+    left: 10px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 2px 5px rgba(240, 239, 239, 0.5); */
+    width: 70px;
+
+  }  
+
+  #box-company {
+        margin: 0 auto;
+        /* position:sticky;  */
+  }
+
+
+}
