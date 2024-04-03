@@ -143,7 +143,7 @@ p {
   top: 30px;
   right : 50px; 
   z-index: 1000;
-  width: 150px;
+  width: 130px;
   padding: 5px 10px;
   text-align: center;
   cursor: pointer;
@@ -207,19 +207,34 @@ color:  #FACE66;
   text-align: left;
 }
 /* **************************  CARDS ************************** */
-.card img{
-  width: 150px;
+#category{
+  padding :25px;
+}
+
+.cards{
+  width:100%;
+  display :flex;
+  height: auto;
 }
 .card{
-  width: 150px;
+  width: 250px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;;
   height: auto;
   background-color: #FACE66;
+  border: 1px solid #fdfcfa;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-  /* flex: 0 0 calc(23.33% - 20px);*/ /* Adjust card width for responsiveness */
-  margin: 10px;
+  /* Adjust card width for responsiveness */
+  flex: 0 0 calc(23.33% - 20px);
+  margin: 5px auto;
+  
+
+  
 }
 .card:hover {
   transform: scale(1.05);
@@ -234,7 +249,7 @@ color:  #FACE66;
   font-weight: bold;
   color: #333;
 text-align: center;
-margin: 10px;
+margin: 5px auto;
 margin-bottom: 10px;
 }
 .card-description {
@@ -245,17 +260,13 @@ margin-bottom: 10px;
 
 .card-img {
   width: 100%;
+  max-width: 220px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 10px; /* not working */
+  margin: 0 auto;
+
 }
-#section-cards {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-align-items: stretch;
-margin: 0 auto;
-max-width: 1200px; /* Adjust max-width as needed */
-}
+
 /* **************************  LEFT CARDS ************************** */
 #left-cards p{
   font-size: .8rem;
@@ -324,6 +335,14 @@ max-width: 1200px; /* Adjust max-width as needed */
 
 /* Mobile view navigation ************************************/
 @media (max-width: 37.5em) {
+  .cards{
+    width:100%;
+    display :inline-block;
+    height: auto;
+  }
+  .card:hover {
+    transform: scale(1);
+  }
   #right-cards {
     display :none;
   
@@ -377,7 +396,7 @@ max-width: 1200px; /* Adjust max-width as needed */
       color: #fff;
       position: absolute;
       top: 3px;
-      right : 100px; 
+      right : 90px; 
       z-index: 1000;
       font-size: .9rem;
     }

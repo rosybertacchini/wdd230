@@ -27,6 +27,15 @@ const displayResults = (data)  => {
         weatherIcon.setAttribute('src', iconsrc+ ".png");
         company.appendChild( weatherIcon);
 
+
+
+
+        const closeButton = document.createElement('span');
+        closeButton.innerHTML = '❌';
+        closeButton.addEventListener('click', () => showMaxtempDisapear());
+        showMaxtemp.appendChild(closeButton);
+
+
         const feels_like = `${Math.round(data.main.feels_like)}&deg;C`; 
         const humidity =  `${Math.round(data.main.humidity)}%`; 
         const pressure =  `${Math.round(data.main.pressure)} hPa`; 
@@ -40,6 +49,9 @@ const displayResults = (data)  => {
     });
 
 }
+
+function showMaxtempDisapear() { showMaxtemp.style.display = 'none'; };
+
 
 function capitalizeEachWord(str) {
     // Split the string into an array of words, capitalize each word, and join them back

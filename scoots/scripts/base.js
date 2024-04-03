@@ -31,7 +31,7 @@ document.getElementById("reserveNow").addEventListener("click", function() {
 
 function discount(){
 
-    alert("go to reservations");
+    //alert("go to reservations");
 }
 
 // Call the function when the DOM content is loaded
