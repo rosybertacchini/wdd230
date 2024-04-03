@@ -61,7 +61,7 @@ function createWeatherCard(feels_like,  humidity, pressure, temp, temp_min, temp
     card_img.setAttribute('src', iconsrc+ ".png") + " "; 
     card_img.setAttribute('alt', "whather Icon") + " ";
     card_description.innerHTML = "Feels like " + feels_like + " ";
-    card_description.innerHTML +="Humidity is " + humidity + " ";
+    card_description.innerHTML +=", Humidity is " + humidity + " ";
     card_description.innerHTML +="and the Pressure is " + pressure;
 
 

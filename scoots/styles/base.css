@@ -208,7 +208,7 @@ color:  #FACE66;
 }
 /* **************************  CARDS ************************** */
 .card img{
-  width: 200px;
+  width: 150px;
 }
 .card{
   width: 150px;
@@ -227,6 +227,7 @@ color:  #FACE66;
 .card-content {
   padding: 10px;
   font-size: 1rem;
+  color : red;
 }
 .card-title {
   font-size: 1.1rem;
