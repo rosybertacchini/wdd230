@@ -24,9 +24,11 @@ const displayCards = (scooters) => {
         // category
         const category = document.createElement('h2');
         category.innerHTML = `${scooter.category}`;
-
         section_cards.appendChild(category); 
 
+        
+        // const space = document.createElement('<br>');
+        // section_cards.appendChild(space); 
 
 
         //for each scoot in the category 
@@ -83,7 +85,6 @@ const displayCards = (scooters) => {
 
 
             }
-        
               section_cards.appendChild(cards);  
                    
           }
