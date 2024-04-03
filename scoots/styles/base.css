@@ -207,6 +207,9 @@ color:  #FACE66;
   text-align: left;
 }
 /* **************************  CARDS ************************** */
+.card img{
+  width: 200px;
+}
 .card{
   width: 150px;
   height: auto;
@@ -215,7 +218,7 @@ color:  #FACE66;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
-  flex: 0 0 calc(23.33% - 20px); /* Adjust card width for responsiveness */
+  /* flex: 0 0 calc(23.33% - 20px);*/ /* Adjust card width for responsiveness */
   margin: 10px;
 }
 .card:hover {
@@ -244,7 +247,7 @@ margin-bottom: 10px;
   height: auto;
   border-radius: 10px;
 }
-#cards {
+#section-cards {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
@@ -382,6 +385,9 @@ max-width: 1200px; /* Adjust max-width as needed */
     }    
     #cards {
       display: flex;
+      }
+    #cards img{
+        width: 50px;
       }
     .card {
       flex: 0 0 calc(90% - 20px); /* Adjust card width for responsiveness */

@@ -1,58 +1,137 @@
-const urlScooter =  "https://rosybertacchini.github.io/wdd230/chamber/data//scoterInventory.json";
-const cards = document.querySelector('#cards');
+const urlScooter =  "https://rosybertacchini.github.io/wdd230/scoots/data//scoterInventory.json";
+
 
 async function getSootData() {
     const response = await fetch(urlScooter);
     const data = await response.json();
-    console.table(data.prophets);
-    displayProphets(data.scooters);
+    console.table(data.scooters);
+    displayCards(data.scooters);
 }
 
 
-// const displayscooters = (scooters) => {
-//     scooters.forEach((scooter) => {
+const displayCards = (scooters) => {
 
-//         // 1. Create a section element
-//         let card = document.createElement('section');
-//         // 2. Create an h2 element
-//         let title = document.createElement('h3');
-//         // 3. Create an img element
-//         let portrait = document.createElement('img');
+    scooters.forEach((scooter) => {
+
+             
+
+
+        const section_cards = document.querySelector('#section-cards');
+
+        const cards = document.createElement('div');
+        cards.setAttribute('id', 'cards');
+
+        // category
+        const category = document.createElement('h2');
+        category.innerHTML = `${scooter.category}`;
+
+        section_cards.appendChild(category); 
+
+
+
+        //for each scoot in the category 
+        for (const category of scooters) {
+            for (const item of category.inventory) {
+
+                // ********************************************************
+                // Create elements for the card
+                // const section_cards = document.querySelector('#section-cards');
+
+                // const cards = document.createElement('div');
+                // cards.setAttribute('id', 'cards');
+
+                const card = document.createElement('div');
+                card.setAttribute('class', 'card');
+                
+                const card_content = document.createElement('div');
+                card_content.setAttribute('class' , 'card-content');
+                
+                const card_title = document.createElement('h2');
+                card_title.setAttribute('class' , 'card-title');
+
+                const card_img = document.createElement('img');
+                card_img.setAttribute('class' , 'card-img');
+
+                const card_description = document.createElement('img');
+                card_description.setAttribute('class' , 'card-description');                  
+                // ********************************************************
+
+
+                // Populate Card
+                card.classList.add("card");
         
-//         // datails for mobile
-//         let divDetails = document.createElement('div');
-//         let divDateBirth = document.createElement('span');
-//         let divPlaceBirth = document.createElement('span');
-
-//         // 4. Populate the heading element with the scooter's name
-//         scooters.textContent = `${scotter.name} ${prophet.lastname}`;
-
+                card_img.src = item.imgPath;
+                card_img.alt = item.title;
         
-//         // 5. Build the image element
-//         portrait.src = `${prophet.imageurl}`;
-//         portrait.setAttribute('alt', `${prophet.name} ${prophet.lastname}`);
-//         portrait.setAttribute('loading', 'lazy');
-//         portrait.setAttribute('width', '300');
-//         portrait.setAttribute('height', '400');
-//         // prepare Details for Mobile 
-//         divDateBirth.innerHTML = "Date of Birth: " + `${prophet.birthdate}`;
-//         divPlaceBirth.innerHTML = "Place of Birth: " + `${prophet.birthplace}`;
+                card_title.textContent = item.title;
+        
+                card_description.textContent = item.desc;
+      
+            //   const price = document.createElement("p");
+            //   price.textContent = `Half Day: ${item['half-day-res']} - Full Day: ${item['full-day-res']}`;
+      
+              card.appendChild(card_title);
+              card.appendChild(card_img);
+              card.appendChild(card_description);
+              //card.appendChild(price);
+      
+              
+             
+             cards.appendChild(card);
 
-//         // 6. AppendChild() on the section element named "card"
-//         divDetails.appendChild(divDateBirth);
-//         divDetails.appendChild(divPlaceBirth);
-   
-//         card.appendChild(fullName); 
-//         card.appendChild(divDetails);        
-//         card.appendChild(portrait);
-//         cards.appendChild(card);
 
-//         // 7. Add the section card to the "cards" div
-//         const cardsContainer = document.getElementById('cards');
-//         cardsContainer.appendChild(card);
 
-//     });
-// }
+
+            }
+        
+              section_cards.appendChild(cards);  
+                   
+          }
+
+    });
+}
 
 
 getSootData();
+
+
+
+
+
+
+
+
+
+const inventoryCardsContainer = document.getElementById("inventoryCards");
+
+  // Function to create a card for each inventory item
+  function createInventoryCards() {
+    for (const category of inventoryData.scooters) {
+      for (const item of category.inventory) {
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        const img = document.createElement("img");
+        img.src = item.imgPath;
+        img.alt = item.title;
+
+        const title = document.createElement("h2");
+        title.textContent = item.title;
+
+        const desc = document.createElement("p");
+        desc.textContent = item.desc;
+
+        const price = document.createElement("p");
+        price.textContent = `Half Day: ${item['half-day-res']} - Full Day: ${item['full-day-res']}`;
+
+        card.appendChild(img);
+        card.appendChild(title);
+        card.appendChild(desc);
+        card.appendChild(price);
+
+        inventoryCardsContainer.appendChild(card);
+      }
+    }
+}
+
+getSootData;
