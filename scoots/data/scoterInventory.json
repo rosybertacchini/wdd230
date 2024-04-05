@@ -9,7 +9,7 @@
           "desc": "This scoot is a (49cc) for 1 person ",
           "maxPersons": 1,
           "halfDayRes": "$ 20.00",
-          "hafullDayRes": "$ 30.00",
+          "halfullDayRes": "$ 30.00",
           "halfDayWin": "$ 25.00",
           "fullDayWin": "$ 35.00"
         },
@@ -19,7 +19,7 @@
           "desc": "This scoot is a (110cc)  for 2 person ",
           "maxPersons": 2,
           "halfDayRes": "$ 30.00",
-          "hafullDayRes": "$ 40.00",
+          "halfullDayRes": "$ 40.00",
           "halfDayWin": "$ 35.00",
           "fullDayWin": "$ 45.00"
         },
@@ -29,7 +29,7 @@
           "desc": "This Pioneer is a (149cc)  for 2 person ",
           "maxPersons": 2,
           "halfDayRes": "$ 40.00",
-          "hafullDayRes": "$ 50.00",
+          "halfullDayRes": "$ 50.00",
           "halfDayWin": "$ 45.00",
           "fullDayWin": "$ 55.00"
         }
@@ -44,7 +44,7 @@
           "desc": "This Jeep is for 4 person ",
           "maxPersons": 4,
           "halfDayRes": "$ 50.00",
-          "hafullDayRes": "$ 70.00",
+          "halfullDayRes": "$ 70.00",
           "halfDayWin": "$ 0.00",
           "fullDayWin": "$ 80.00"
         }
@@ -59,7 +59,7 @@
           "desc": "This Jeep is a (49cc) for 1 person ",
           "maxPersons": 5,
           "halfDayRes": "$ 70.00",
-          "hafullDayRes": "$ 100.00",
+          "halfullDayRes": "$ 100.00",
           "halfDayWin": "$ 85.00",
           "fullDayWin": "$ 125.00"
         },
@@ -69,7 +69,7 @@
           "desc": "This scoot is open air, manuel for 4 person",
           "maxPersons": 4,
           "halfDayRes": "$ 60.00",
-          "hafullDayRes": "$ 85.00",
+          "halfullDayRes": "$ 85.00",
           "halfDayWin": "$ 70.00",
           "fullDayWin": "$ 90.00"
         }
