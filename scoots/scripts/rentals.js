@@ -127,7 +127,7 @@ const displayScooterTableForMobile = (scooters) => {
             console.log(item)
                 console.log(item.max_persons)
             card_description.textContent = item.desc;
-            card_max_persons.textContent = item.max-persons;
+            card_max_persons.textContent = item.maxPersons;
             card_half_day_res.textContent = item.full_day_res;
             card_full_day_res.textContent = item.full_day_res;
             card_half_day_w_in.textContent = item.half_day_w_in;

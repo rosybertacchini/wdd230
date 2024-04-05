@@ -8,30 +8,30 @@
           "imgPath": "images/metropolitan.webp",
           "desc": "This scoot is a (49cc) for 1 person ",
           "maxPersons": 1,
-          "half-day-res": "$ 20.00",
-          "full-day-res": "$ 30.00",
-          "half-day-w-in": "$ 25.00",
-          "full-day-w-in": "$ 35.00"
+          "halfDayRes": "$ 20.00",
+          "hafullDayRes": "$ 30.00",
+          "halfDayWin": "$ 25.00",
+          "fullDayWin": "$ 35.00"
         },
         {
           "title": "Dio Scooter",
           "imgPath": "images/dio.webp",
           "desc": "This scoot is a (110cc)  for 2 person ",
           "maxPersons": 2,
-          "half-day-res": "$ 30.00",
-          "full-day-res": "$ 40.00",
-          "half-day-w-in": "$ 35.00",
-          "full-day-w-in": "$ 45.00"
+          "halfDayRes": "$ 30.00",
+          "hafullDayRes": "$ 40.00",
+          "halfDayWin": "$ 35.00",
+          "fullDayWin": "$ 45.00"
         },
         {
           "title": "PCX150 Scooter",
           "imgPath": "images/pcx150.webp",
           "desc": "This Pioneer is a (149cc)  for 2 person ",
           "maxPersons": 2,
-          "half-day-res": "$ 40.00",
-          "full-day-res": "$ 50.00",
-          "half-day-w-in": "$ 45.00",
-          "full-day-w-in": "$ 55.00"
+          "halfDayRes": "$ 40.00",
+          "hafullDayRes": "$ 50.00",
+          "halfDayWin": "$ 45.00",
+          "fullDayWin": "$ 55.00"
         }
       ]
     },
@@ -43,10 +43,10 @@
           "imgPath": "images/avt.webp",
           "desc": "This Jeep is for 4 person ",
           "maxPersons": 4,
-          "half-day-res": "$ 50.00",
-          "full-day-res": "$ 70.00",
-          "half-day-w-in": "$ 0.00",
-          "full-day-w-in": "$ 80.00"
+          "halfDayRes": "$ 50.00",
+          "hafullDayRes": "$ 70.00",
+          "halfDayWin": "$ 0.00",
+          "fullDayWin": "$ 80.00"
         }
       ]
     },
@@ -58,20 +58,20 @@
           "imgPath": "images/wrangler.webp",
           "desc": "This Jeep is a (49cc) for 1 person ",
           "maxPersons": 5,
-          "half-day-res": "$ 70.00",
-          "full-day-res": "$ 100.00",
-          "half-day-w-in": "$ 85.00",
-          "full-day-w-in": "$ 125.00"
+          "halfDayRes": "$ 70.00",
+          "hafullDayRes": "$ 100.00",
+          "halfDayWin": "$ 85.00",
+          "fullDayWin": "$ 125.00"
         },
         {
           "title": "Wrangler - 2 door ",
           "imgPath": "images/wrangler-2doors.webp",
           "desc": "This scoot is open air, manuel for 4 person",
           "maxPersons": 4,
-          "half-day-res": "$ 60.00",
-          "full-day-res": "$ 85.00",
-          "half-day-w-in": "$ 70.00",
-          "full-day-w-in": "$ 90.00"
+          "halfDayRes": "$ 60.00",
+          "hafullDayRes": "$ 85.00",
+          "halfDayWin": "$ 70.00",
+          "fullDayWin": "$ 90.00"
         }
       ]
     }
