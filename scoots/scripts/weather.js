@@ -1,6 +1,6 @@
 const weatherIcon = document.querySelector("#weatherIcon");
 const compnay = document.querySelector("#company");
-const showMaxtemp = document.querySelector('#current--maxTemp');
+const showMaxtemp = document.querySelector('#current-maxTemp');
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=32.50310852801206&lon=-117.00470232465491&appid=bf0dd84c28e62391c7294fb52233ed70&units=metric";
 //const url = "https://api.openweathermap.org/data/2.5/forecast?lat=32.50&lon=-117.00&appid=bf0dd84c28e62391c7294fb52233ed70&units=metric";
 
@@ -50,7 +50,10 @@ const displayResults = (data)  => {
 
 }
 
-function showMaxtempDisapear() { showMaxtemp.style.display = 'none'; };
+function showMaxtempDisapear() { 
+    showMaxtemp.style.display = 'none'; 
+    weatherIcon.style.display = 'none';
+};
 
 
 function capitalizeEachWord(str) {
@@ -95,14 +98,6 @@ function createWeatherCard(feels_like,  humidity, pressure, temp, temp_min, temp
     const cardsContainer = document.getElementById('left-cards');
     cardsContainer.appendChild(card);
 }
-
-
-
-  
-  
-
-
-
 
 
 apiFetch()

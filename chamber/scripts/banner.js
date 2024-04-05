@@ -5,20 +5,6 @@ function isBannerDay() {
   }
    
   
-//   function isBannerDayTest() {
-//     const today = new Date();
-//     // to test date of mon-wed
-//     const yesterday = new Date(today);
-//     yesterday.setDate(today.getDate() - 3); 
-//     const dayOfWeek = yesterday.getDay();
-//     // if (dayOfWeek >= 1 && dayOfWeek) {
-//     //     console.log(dayOfWeek);
-//     // }
-//     return dayOfWeek >= 1 && dayOfWeek <= 3; // Monday = 1, Tuesday = 2, Wednesday = 3
-//   }
-
-
- 
     // Function to create the banner
     function createBanner() {
       const banner = document.createElement('div');

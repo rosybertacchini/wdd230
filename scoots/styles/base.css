@@ -85,7 +85,6 @@ main p {
   padding: 30px;
 }
 p {
-  /* grid-column: 2/10;  */
   font-size: 1.3rem;
   text-align: center;
   line-height: 1.5;
@@ -121,10 +120,10 @@ p {
  display: flex;
  
 }
-#current--maxTemp{
+#current-maxTemp{
   color: #fff;
   position: absolute;
-  top: 10px;
+  top: 5px;
   right : 50px; 
   z-index: 1000;
 }
@@ -153,7 +152,7 @@ p {
   width: 150px;
   text-align: center;
   position: fixed;
-  top: 50%; /* Adjust as needed */
+  top: 60%; /* Adjust as needed */
   transform: translateY(-50%);
   background-color: #ffc107; /* Yellow color, you can change it */
   padding: 10px;
@@ -259,7 +258,7 @@ margin-bottom: 10px;
 }
 
 .card-img {
-  width: 100%;
+  width: 80%;
   max-width: 220px;
   height: auto;
   border-radius: 10px; /* not working */
@@ -267,7 +266,7 @@ margin-bottom: 10px;
 
 }
 
-/* **************************  LEFT CARDS ************************** */
+/* **************************  LEFT and RIGHT CARDS ************************** */
 #left-cards p{
   font-size: .8rem;
 }
@@ -297,7 +296,59 @@ margin-bottom: 10px;
   padding: 10px;
 } 
 
-/* **************************  RIGHT CARDS ************************** */
+/* ************************** Contact US ************************** */
+#mainContactus, #mainRentals {
+  margin-top: 150px;
+  min-height: 700px;
+  text-align: center;
+}
+#section-maps p {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+}
+#section-maps {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+.location {
+  text-align: center;
+}
+
+.location .map {
+  display: inline-block;
+}
+.map {
+  width: 100%;
+  max-width: 380px;
+  border: 0 ;
+}
+
+/* ************************** Rentals ************************** */
+.even {
+  background-color: #f0deb4; 
+}
+.odd {
+  background-color: #5c5a5a; 
+  color:#fff
+}
+#scooterTable img{
+  box-shadow: 0 0 20px #333;
+  display:blok;
+  /* margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%; */
+  /* border: 1px solid  #FACE66;  */
+}
+
+
+
+
+.rowEmpty {
+  background-color:  #eee4cc;
+  height: 100px;
+}
 
 /* ****************************************************************** */
 
@@ -319,11 +370,80 @@ margin-bottom: 10px;
   margin: 0 auto;
   max-width: 1200px; /* Adjust max-width as needed */
 }
-/* weather {
-  background-color: #333;
-} */
+
+/* *************************** FORM  ********************************* */
 
 
+
+
+
+      form {
+        margin: 0 auto;;
+        position: relative;
+    
+      }
+      
+      fieldset {
+      
+        border: 2px solid   #FACE66;
+        margin: 2rem 0;
+        padding: .5rem 2%;
+        border-radius:  18px;
+        text-align: center;
+        justify-content: center;
+        display: inline-block;
+      }
+      
+      form legend {
+        /* color: #333; */
+        margin: 0 1rem;
+        padding: 0 1rem;
+      
+      }
+      
+      form  input, label , textarea{
+        display: block;
+        font-size:  .8rem;
+        border: solid 1px  #FACE66;
+        border-radius: 4px;
+        padding: .75rem ;
+        width: 90%;
+        max-width: 20rem;
+      }
+      
+      form  label.info{
+        border: 0;
+      }
+
+      /* -------------------------------- */
+      form label.info  input:required {
+        border-left:  #f80202 solid 6px;
+      }
+      
+      form label.info  input:required:valid {
+        border-left: green solid 6px;
+      }
+
+      /* -------------------------------- */
+      /* this code , do not work for required textarea :( */
+       textarea:required:valid {
+        border-left: #0a6302 solid 6px; /* Green border for required and valid */
+      }
+      textarea:required {
+        border-left: #f80202 solid 6px; /* Red border for required but empty */
+      }
+      /* -------------------------------- */
+
+      form input.submitBtn {
+        border:none;
+        background-color:  #333;
+        color:white;
+        border-radius: 1rem;
+        padding:  .75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        width: 96%;
+        max-width: 18rem;
+      }
 /* ************************************************************** */
 /* ************************************************************** */
 
@@ -335,6 +455,25 @@ margin-bottom: 10px;
 
 /* Mobile view navigation ************************************/
 @media (max-width: 37.5em) {
+
+
+  #mainRentals #scooterTable{
+    display :none;
+  }
+
+  /* contact us page */
+  #mainContactus , #mainRentals{
+    margin-top: 40px;
+    text-align: center;
+  }
+  #section-maps {
+    margin: 0 auto;
+    display: inline-block;
+  }
+  /* --------------- */
+
+
+
   .cards{
     width:100%;
     display :inline-block;
@@ -392,13 +531,14 @@ margin-bottom: 10px;
       top: 0px;
       right :60px;
     } 
-    #current--maxTemp{
+    #current-maxTemp{
       color: #fff;
       position: absolute;
       top: 3px;
       right : 90px; 
       z-index: 1000;
-      font-size: .9rem;
+      font-size: .8rem;
+      padding: 8px;
     }
     #phone {
       border-radius: 0px;
@@ -455,7 +595,10 @@ margin-bottom: 10px;
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
 
-	#menu {
+  #mainRentals #section-cards {
+    display:none;
+  }
+  #menu {
 		display: none; /* hide hamburger button */
 	}
 	.navigation {

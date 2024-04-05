@@ -4,17 +4,16 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Scooters Rental</title>
+    <title>Contact Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rosy Bertacchini" />
     <meta name="description"
-        content="Discover the freedom of exploring Cuzumel on wheels! Rent a scooter with ease from our reliable fleet and unlock the city's hidden gems at your own pace." />
+        content="Contact Costal Scoot Rentals, we are happy to hear your comments." />
     <meta property="og:title" content="Best Scooters Rentals in Cozumel beach" />
     <meta property="og:url" content="https://rosybertacchini.github.io/wdd230/scoots" />
     <meta property="og:image" content="https://rosybertacchini.github.io/wdd230/scoots/images/heroImageMobile.webp" />
     <meta property="og:site_name" content="Student of BYUI" />
     <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
     <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css" />
     <link rel="icon" href="favicon.ico" />
@@ -40,39 +39,71 @@
                 </ul>
             </ul>
         </nav>
-        <div id="header-container">
-            <picture>
-                <!-- Use the small image for mobile devices -->
-                <source class="heroImage" media="(max-width: 375px)" srcset="images/pixlr-tallAspect.webp"
-                    alt="Samll Hero Image" />
-                <!-- Use the large image for larger screens -->
-                <source class="heroImage" media="(max-width:500)" srcset="images/heroImage1200.webp"
-                    alt="Middiam Hero Image" />
-                <!-- Fallback image for browsers that do not support the <picture> element -->
-                <img class="heroImage" src="images/heroImage1920.webp" alt="Large Hero Image" />
-            </picture>
-        </div>
-        <div id="slogan">Ride the Waves of Fun in Cozumel !</div>
+      
     </header>
     <div id="reserveNow">Reserve now and get 15% off!</div>
-    <main>
+    <main id="mainContactus">
         <div id="left-area">
             <div id="left-cards"></div>
         </div>
         <div id="central-area">
-            <h1> Welcome to Costal Scoot Rentals!</h1>
-            <div id="wellcome">
+            <h1> We are happy to hear from You!</h1>
+            <br />
                 <br />
-                    <p> Get ready to explore the breathtaking beauty of Cozumel, the jewel of the Caribbean, with Cozumel
-                    Scooter Rentals. As the premier motor scooter rental company on the island, we are dedicated to
-                    providing you with an unforgettable adventure through our pristine landscapes and vibrant culture.</p>
+                <div>
+                    <form id="contactForm" method="get" action="#">
+                        <fieldset>
+                          <legend>Please give us your comments</legend>
+                          <label class="info"
+                            >First Name*
+                            <input type="text" id="fname" name="fname"   />
+                          </label>
+                          <label class="info"
+                            >E-mail*
+                            <input
+                              type="email"
+                              id="email"
+                              name="email"
+  
+                              pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/"
+                              title="Please enter a valid email address"
+                          /></label>
+   
+                            <label class="info" for="comments"
+                              >Comments<textarea
+                              type="text" 
+                              id="comments"
+                              name="comments"
+                              
+                              >
+                              </textarea>
+                            </label>
 
-                    <p>Why Costal Scoot Rentals?</p>
-                    <p> Convenience: Forget about waiting for taxis or navigating confusing public transportation schedules. With ScootOn, you can pick up and drop off your scooter at multiple locations throughout the city, making your journey smooth and stress-free.
-                    Affordability: Say goodbye to expensive rideshare fees and parking costs. Our rental rates are budget-friendly.
-                    Freedom: Experience the city at your own pace. With a scooter from ScootOn, you have the freedom to roam wherever your heart desires, uncovering hidden gems and iconic landmarks along the way.</p>
+                          <input
+                            type="hidden"
+                            id="timestampInput"
+                            name="timestampInput"
+                            value=""
+                          />
+                          <input type="submit" value="Send Comments" class="submitBtn" />
+                        </fieldset>
+                      </form>
                 </div>
-            <div id="section-cards">
+                    <h2>Our Locations</h2>
+                    <br />
+                    <br />
+            <div id="section-maps">
+                <div class="location">
+                    <p>Av. Rafael E. Melgar 1001, Centro, 77664 Cozumel, Q.R.</p>
+                    <p>Tel 987-987-987</p>
+                    <iframe class ="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d59768.50714970555!2d-87.05400931916465!3d20.566333269719838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlaya%20del%20Carmen-Cozumel%20Ferry%20dock!5e0!3m2!1ses-419!2smx!4v1712181431747!5m2!1ses-419!2smx" allowfullscreen ="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="location">
+                    <p>Interior Marina Fonatur 1200, Zona Hotelera Nte., 77600 Cozumel, Q.R.</p>
+                    <p>Tel 987-551-987</p>
+                    <iframe class ="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3737.7337954794516!2d-86.9772608382217!3d20.47612405644911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTerminal%20Puerta%20Maya%20!5e0!3m2!1ses-419!2smx!4v1712182490796!5m2!1ses-419!2smx"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
         <div id="right-area">
@@ -94,7 +125,6 @@
             </section>
             <section class="footer-subSection">
                 <h3>Clients</h3>
-
 
                 <a href="#">Customer service</a>
                 <a href="#"> Locate your store</a>
@@ -130,7 +160,7 @@
     </footer>
     </footer>
     <script src="scripts/base.js"></script>
-    <script src="scripts/cardsScootCards.js"></script>
+    <!-- <script src="scripts/cardsScootCards.js"></script> -->
     <script src="scripts/weather.js"></script>
 </body>
 
