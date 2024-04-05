@@ -101,44 +101,32 @@ const displayScooterTableForMobile = (scooters) => {
             card_img.setAttribute('class', 'card-img');
             card_img.src = item.imgPath;
             card_img.alt = item.title;
+            card_img.loading = "lazy" ;
+
             // ---------------------------------------------------- //
 
             const card_descriptionDiv = document.createElement('div');
             card_descriptionDiv.setAttribute('id', 'card-descriptionDiv');
 
-            const card_description = document.createElement('p');
+            //const card_description = document.createElement('p');
             const card_max_persons = document.createElement('p');
             const card_half_day_res = document.createElement('p');
             const card_full_day_res = document.createElement('p');
             const card_half_day_w_in = document.createElement('p');
             const card_full_day_w_in = document.createElement('p');
 
+            const newLine = document.createElement('br');
 
+            //console.log(item)
+            //console.log(item.max_persons)
+            //card_description.textContent = item.desc;
+            card_max_persons.textContent = "Max. Persons: " + item.maxPersons;
+            card_half_day_res.textContent = "Reservation: Half Day (3 hrs):  " + item.halfDayRes;
+            card_full_day_res.textContent = "Reservation: Full Day: " + item.fullDayRes;
+            card_half_day_w_in.textContent = "Walk-In Half Day (3 hrs): " + item.halfDayWin;
+            card_full_day_w_in.textContent = "Walk-In Full Day: " + item.fullDayWin;  
 
-
-            
-            card_description.setAttribute('class', 'card-description');
-            card_max_persons.setAttribute('class', 'card-description');
-            card_half_day_res .setAttribute('class', 'card-description');
-            card_full_day_res.setAttribute('class', 'card-description');
-            card_half_day_w_in.setAttribute('class', 'card-description');
-            card_full_day_w_in.setAttribute('class', 'card-description');
-
-            console.log(item)
-                console.log(item.max_persons)
-            card_description.textContent = item.desc;
-            card_max_persons.textContent = item.maxPersons;
-            card_half_day_res.textContent = item.halfDayRes;
-            card_full_day_res.textContent = item.full_day_res;
-            card_half_day_w_in.textContent = item.half_day_w_in;
-            card_full_day_w_in.textContent = item.full_day_w_in;  
-
-
-
-
-
-
-            card_descriptionDiv.appendChild(card_description)
+            //card_descriptionDiv.appendChild(card_description)
             card_descriptionDiv.appendChild(card_max_persons);
             card_descriptionDiv.appendChild(card_half_day_res);
             card_descriptionDiv.appendChild(card_full_day_res);
@@ -146,7 +134,6 @@ const displayScooterTableForMobile = (scooters) => {
             card_descriptionDiv.appendChild(card_full_day_w_in);
 
             card.appendChild(card_descriptionDiv);
-       
 
             card.appendChild(card_title);
             card.appendChild(card_img);

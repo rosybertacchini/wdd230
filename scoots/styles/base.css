@@ -6,9 +6,9 @@ body {
 }
 /* ************************** FIRST HEADER *************************** */
 
-#company{
+#company {
   position: fixed;
-  display :flex; /* aqui la añadi */
+  display: flex; /* aqui la añadi */
   width: 100%;
   height: 120px;
   background-color: #5c5a5a;
@@ -36,53 +36,54 @@ body {
 }
 .navigation ul li a {
   text-decoration: none;
-  color:  #FACE66; 
-  font-size:clamp(1rem, 2vw , 1.3rem); 
+  color: #face66;
+  font-size: clamp(1rem, 2vw, 1.3rem);
 }
 .navigation a {
-	display: none;
+  display: none;
 }
-.navigation li:hover .active{
-  background-color:   #504c43;
+.navigation li:hover .active {
+  background-color: #504c43;
   color: #fff;
   border-radius: 3px;
 }
 .active {
-  background-color:  #504c43;
+  background-color: #504c43;
   border-radius: 3px;
   padding: 10px;
 }
-a{
+a {
   font-size: 1 rem;
 }
 
-
 /* **************************  MAIN  ************************** */
 main {
-  background-color:  #eee4cc; /* #ecd397;*/ 
-  display:grid;
-  grid-template-columns: repeat(10,1fr); 
-
+  background-color: #eee4cc; /* #ecd397;*/
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
 }
 main p {
-  font-size:clamp(.9rem, 2vw , 1.1rem); 
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
-#left-area , #right-area{
+#left-area,
+#right-area {
   align-items: center;
   margin: 0 auto;
   padding: 15px;
-  width : 100%;
+  width: 100%;
   max-width: 200px;
 }
-#left-area , #right-area{
+#left-area,
+#right-area {
   grid-column: 1/2;
 }
-#right-area{
+#right-area {
   grid-column: 9/11;
 }
 #central-area {
   grid-column: 2/9;
-  padding: 30px;
+  margin: 0 auto;
+  padding-left: 60px;
 }
 p {
   font-size: 1.3rem;
@@ -91,63 +92,62 @@ p {
 }
 /* **************************  MENU ************************** */
 #menu {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #FACE66;
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 7px 6px;
+  background-color: #face66;
   position: absolute;
   top: 0;
   right: 0px;
   z-index: 1000;
 }
 #menu::before {
-	content: "☰";
+  content: "☰";
 }
 #menu.open::before {
-	content: "X";
+  content: "X";
 }
 #menu::before {
   content: "☰";
 }
 #menu.open::before {
   content: "X";
- }
+}
 .open a {
   display: block;
 }
 /* *********************  WEATHER  ICON  AND PHONE  ****************** */
 #weatherIcon-container {
- display: flex;
- 
+  display: flex;
 }
-#current-maxTemp{
+#current-maxTemp {
   color: #fff;
   position: absolute;
   top: 5px;
-  right : 50px; 
+  right: 50px;
   z-index: 1000;
 }
 #weatherIcon {
   position: absolute;
   top: 3px;
-  right : 0px; 
+  right: 0px;
   z-index: 1000;
   width: 40px;
   height: 40px;
 }
 #phone {
-  background-color: #FACE66; ;
+  background-color: #face66;
   position: absolute;
   border-radius: 10px;
   top: 30px;
-  right : 50px; 
+  right: 50px;
   z-index: 1000;
   width: 130px;
   padding: 5px 10px;
   text-align: center;
   cursor: pointer;
 }
-#reserveNow{
+#reserveNow {
   border-radius: 10px;
   width: 150px;
   text-align: center;
@@ -157,17 +157,15 @@ p {
   background-color: #ffc107; /* Yellow color, you can change it */
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   cursor: pointer;
 }
 
-
 /* **************************  WEATHER INFO  ************************** */
 #weather p {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #fff;
-
 }
 /* **************************  FOOTER  ************************** */
 
@@ -187,42 +185,42 @@ footer p {
 footer {
   width: 100%;
   background-color: #333;
-  color:  #FACE66;
+  color: #face66;
 }
-.section-footer  p{
-  font-size: .8rem;
+.section-footer p {
+  font-size: 0.8rem;
 }
-.section-footer  a  {
+.section-footer a {
   text-decoration: none;
-  color:  #333;
-display:flex;
-font-size: .8rem;
-color:  #FACE66;
+  color: #333;
+  display: flex;
+  font-size: 0.8rem;
+  color: #face66;
 }
-.section-footer  p  {
-   text-align: left;
+.section-footer p {
+  text-align: left;
 }
 .footer-subSection {
   text-align: left;
 }
 /* **************************  CARDS ************************** */
-#category{
-  padding :25px;
+#category {
+  padding: 25px;
 }
 
-.cards{
-  width:100%;
-  display :flex;
+.cards {
+  width: 100%;
+  display: flex;
   height: auto;
 }
-.card{
+.card {
   width: 250px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  text-align: center;;
+  text-align: center;
   height: auto;
-  background-color: #FACE66;
+  background-color: #face66;
   border: 1px solid #fdfcfa;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -231,7 +229,6 @@ color:  #FACE66;
   /* Adjust card width for responsiveness */
   flex: 0 0 calc(23.33% - 20px);
   margin: 5px auto;
-   
 }
 .card:hover {
   transform: scale(1.05);
@@ -245,9 +242,9 @@ color:  #FACE66;
   font-size: 1.1rem;
   font-weight: bold;
   color: #333;
-text-align: center;
-margin: 5px auto;
-margin-bottom: 10px;
+  text-align: center;
+  margin: 5px auto;
+  margin-bottom: 10px;
 }
 .card-description {
   font-size: 14px;
@@ -255,29 +252,27 @@ margin-bottom: 10px;
   line-height: 1.5;
 }
 
-
 .card-img {
   width: 80%;
   max-width: 220px;
   height: auto;
   border-radius: 10px; /* not working */
   margin: 0 auto;
-
 }
-
 
 /* **************************  LEFT and RIGHT CARDS ************************** */
-#left-cards p{
-  font-size: .8rem;
+#left-cards p {
+  font-size: 0.8rem;
 }
-#left-cards, #right-cards {
+#left-cards,
+#right-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   border: 1px solid #fdfcfa;
-  color : #FACE66; 
+  color: #face66;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 300px;
   max-height: 300px;
@@ -289,15 +284,16 @@ margin-bottom: 10px;
 }
 
 #right-cards {
-  background-color : #FACE66; 
+  background-color: #face66;
 }
 #right-cards img {
   width: 50px;
   padding: 10px;
-} 
+}
 
 /* ************************** Contact US ************************** */
-#mainContactus, #mainRentals {
+#mainContactus,
+#mainRentals {
   margin-top: 150px;
   min-height: 700px;
   text-align: center;
@@ -317,34 +313,33 @@ margin-bottom: 10px;
 }
 .location .map {
   display: inline-block;
+  padding-bottom: 30px;
 }
 .map {
   width: 100%;
   max-width: 380px;
-  border: 0 ;
+  border: 0;
 }
 
 /* ************************** Rentals ************************** */
 .even {
-  background-color: #f0deb4; 
+  background-color: #f0deb4;
 }
 .odd {
-  background-color: #5c5a5a; 
-  color:#fff
+  background-color: #5c5a5a;
+  color: #fff;
 }
-#scooterTable img{
+
+#scooterTable img {
   box-shadow: 0 0 20px #333;
 }
 .rowEmpty {
-  background-color:  #eee4cc;
+  background-color: #eee4cc;
   height: 100px;
 }
-
-
-
 /* ****************************************************************** */
-
- h1, h2 {
+h1,
+h2 {
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -352,9 +347,8 @@ margin-bottom: 10px;
   align-items: stretch;
   margin: 0 auto;
   max-width: 1200px; /* Adjust max-width as needed */
-  
 }
-#wellcome  {
+#wellcome {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -364,99 +358,114 @@ margin-bottom: 10px;
 }
 
 /* *************************** FORM  ********************************* */
-      form {
-        margin: 0 auto;;
-        position: relative;
-      }
-      fieldset {
-        border: 2px solid   #FACE66;
-        margin: 2rem 0;
-        padding: .5rem 2%;
-        border-radius:  18px;
-        text-align: center;
-        justify-content: center;
-        display: inline-block;
-      }
-      form legend {
-        /* color: #333; */
-        margin: 0 1rem;
-        padding: 0 1rem;
-      
-      }
-      form  input, label , textarea{
-        display: block;
-        font-size:  .8rem;
-        border: solid 1px  #FACE66;
-        border-radius: 4px;
-        padding: .75rem ;
-        width: 90%;
-        max-width: 20rem;
-      }
-      form  label.info{
-        border: 0;
-      }
-      /* -------------------------------- */
-      form label.info  input:required {
-        border-left:  #f80202 solid 6px;
-      }
-      form label.info  input:required:valid {
-        border-left: green solid 6px;
-      }
-      /* -------------------------------- */
-      /* this code , do not work for required textarea :( */
-       textarea:required:valid {
-        border-left: #0a6302 solid 6px; /* Green border for required and valid */
-      }
-      textarea:required {
-        border-left: #f80202 solid 6px; /* Red border for required but empty */
-      }
-      /* -------------------------------- */
+form {
+  margin: 0 auto;
+  position: relative;
+}
+fieldset {
+  border: 2px solid #face66;
+  margin: 2rem 0;
+  padding: 0.5rem 2%;
+  border-radius: 18px;
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+}
+form legend {
+  /* color: #333; */
+  margin: 0 1rem;
+  padding: 0 1rem;
+}
+form input,
+label,
+textarea {
+  display: block;
+  font-size: 0.8rem;
+  border: solid 1px #face66;
+  border-radius: 4px;
+  padding: 0.75rem;
+  width: 90%;
+  max-width: 20rem;
+}
+form label.info {
+  border: 0;
+}
+/* -------------------------------- */
+form label.info input:required {
+  border-left: #f80202 solid 6px;
+}
+form label.info input:required:valid {
+  border-left: green solid 6px;
+}
+/* -------------------------------- */
+/* this code , do not work for required textarea :( */
+textarea:required:valid {
+  border-left: #0a6302 solid 6px; /* Green border for required and valid */
+}
+textarea:required {
+  border-left: #f80202 solid 6px; /* Red border for required but empty */
+}
+/* -------------------------------- */
+form input.submitBtn {
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 18rem;
+}
+/* ************************************************************** */
+/* ************************************************************** */
 
-      form input.submitBtn {
-        border:none;
-        background-color:  #333;
-        color:white;
-        border-radius: 1rem;
-        padding:  .75rem 1.5rem;
-        margin: 0 0 2rem 2%;
-        width: 96%;
-        max-width: 18rem;
-      }
-/* ************************************************************** */
-/* ************************************************************** */
 /* Mobile view navigation ************************************/
 @media (max-width: 37.5em) {
-
-  /* Rentals -----------*/ 
-  #mainRentals #scooterTable{
-    display :none;
+  #central-area {
+    grid-column: 2/9;
+    margin: 0 auto;
+    padding: 0;
   }
-  #mainRentals #section-cards{
+  /* Rentals -----------*/
+  #mainRentals #scooterTable {
+    display: none;
+  }
+  #mainRentals #section-cards {
     background-color: #eee4cc;
   }
-  #mainRentals #section-cards h2{
+  #mainRentals #section-cards h2 {
     font-size: 1.1rem;
   }
-  #mainRentals #section-cards .card{
+  #mainRentals #section-cards .card {
     background-color: #333;
-  }  
-  #mainRentals #section-cards p {
-    color: #fff;
-    overflow:scroll;
-    font-size: .9rem;
   }
-  #mainRentals #card_descriptionDiv{ /* aqui */
-    background-color:  #FACE66;
+  #mainRentals #section-cards p {
+    background-color: #face66;
+    color: #333;
+    /* color: #fff; */
+    overflow: scroll;
+    font-size: 0.8.5rem;
+    font-weight: none;
+    /* line-height: .8; */
+    text-decoration: left;
+    margin: 0;
+  }
+  #mainRentals #card-descriptionDiv {
+    background-color: #face66;
     color: #333;
   }
-  .card-title {
-    color:#FACE66;
-
+  #mainRentals #card-descriptionDiv p {
+    text-align: left;
+    padding-left: 10px;
   }
- /* -------------------*/
+  .card-title {
+    color: #face66;
+  }
+  /* -------------------*/
 
   /* contact us page */
-  #mainContactus , #mainRentals{
+  #mainContactus,
+  #mainRentals {
     margin-top: 40px;
     text-align: center;
   }
@@ -465,154 +474,149 @@ margin-bottom: 10px;
     display: inline-block;
   }
   /* --------------- */
-
-
-
-  .cards{
-    width:100%;
-    display :inline-block;
+  .cards {
+    width: 100%;
+    display: inline-block;
     height: auto;
   }
   .card:hover {
     transform: scale(1);
   }
   #right-cards {
-    display :none;
-  
+    display: none;
   }
   #header-container img {
-      margin-top: 0px;
+    margin-top: 0px;
   }
-    p {
-      font-size: 1rem;
-    }
-    h1{
-      font-size: 1.3rem;
-      padding-top: 10px;
-      text-align: center;
-      width: 90%;
-      max-width: 350px; /* Adjust max-width as needed */
-    }
-    .navigation a li ul {
-      font-size: 1rem;
-    }
-    .navigation {
-      height: 0px;
-    }
-    ul{
-      background-color: #333;;
-    }
-    .navigation.open {
-      text-align: left;
-      position: fixed;
-      left: 0;
-      top: 50px;
-      z-index: 1001;
-    }
-    /* desaparecer en mobil */
-    #companyName    {
-      display: none;
-    }
-    #slogan  {
-      display: none;
-    }
-    #logo  {
-      display :none;
-    }
-    /* ******************* */
-    #weatherIcon {
-      /* display: none; */
-      top: 0px;
-      right :60px;
-    } 
-    #current-maxTemp{
-      color: #fff;
-      position: absolute;
-      top: 3px;
-      right : 90px; 
-      z-index: 1000;
-      font-size: .8rem;
-      padding: 8px;
-    }
-    #phone {
-      border-radius: 0px;
-    }    
-    #cards {
-      display: flex;
-      }
-    #cards img{
-        width: 50px;
-      }
-    .card {
-      flex: 0 0 calc(90% - 20px); /* Adjust card width for responsiveness */
-    }
-    #wellcome  {
-      width: 90%;
-      max-width: 350px; /* Adjust max-width as needed */
-    }
-    .section-footer{
-      padding: 10px;
-    }
-    #phone {
-      font-size: .9rem;
-      position: absolute;
-      border-radius: 3px;
-      top: 1px;
-      left: 2px;
-      width: 100px;
-      height: 30px;
-    }
-    #wellcome  {
-           max-width: 400px; /* Adjust max-width as needed */
-    }
-    .card-description {
-      font-size: 16px;
-    }
-    #company{
-      height: 44px;  /* AQUI */
-    }
-    main {
-      display:block;
-      margin: 0 auto;
-    }
-    main p {
-      font-size:clamp(.9rem, 2vw , 1.1rem); 
-    }
-    #reserveNow{
-      top: 550px;
-      left : 50%; 
-      transform: translate(-50%, -50%);
-      z-index: 1000;
-    }
+  p {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+    padding-top: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+  }
+  .navigation a li ul {
+    font-size: 1rem;
+  }
+  .navigation {
+    height: 0px;
+  }
+  ul {
+    background-color: #333;
+  }
+  .navigation.open {
+    text-align: left;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    z-index: 1001;
+  }
+  /* desaparecer en mobil */
+  #companyName {
+    display: none;
+  }
+  #slogan {
+    display: none;
+  }
+  #logo {
+    display: none;
+  }
+  /* ******************* */
+  #weatherIcon {
+    /* display: none; */
+    top: 0px;
+    right: 60px;
+  }
+  #current-maxTemp {
+    color: #fff;
+    position: absolute;
+    top: 3px;
+    right: 90px;
+    z-index: 1000;
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+  #phone {
+    border-radius: 0px;
+  }
+  #cards {
+    display: flex;
+  }
+  #cards img {
+    width: 50px;
+  }
+  .card {
+    flex: 0 0 calc(90% - 20px);
+  }
+  #wellcome {
+    width: 90%;
+    max-width: 350px;
+  }
+  .section-footer {
+    padding: 10px;
+  }
+  #phone {
+    font-size: 0.9rem;
+    position: absolute;
+    border-radius: 3px;
+    top: 1px;
+    left: 2px;
+    width: 100px;
+    height: 30px;
+  }
+  #wellcome {
+    max-width: 400px;
+  }
+  .card-description {
+    font-size: 16px;
+  }
+  #company {
+    height: 44px; /* AQUI */
+  }
+  main {
+    display: block;
+    margin: 0 auto;
+  }
+  main p {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+  }
+  #reserveNow {
+    top: 550px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
 }
 
 /* large view navigation ************************************/
 @media (min-width: 37.5em) {
-
   #mainRentals #section-cards {
-    display:none;
+    display: none;
   }
   #menu {
-		display: none; /* hide hamburger button */
-	}
-	.navigation {
-		flex-direction: row;
-	}
-	.navigation a {
-		display: block;
-		flex: 1 1 100%;
-	}
+    display: none; /* hide hamburger button */
+  }
+  .navigation {
+    flex-direction: row;
+  }
+  .navigation a {
+    display: block;
+    flex: 1 1 100%;
+  }
   .navigation ul li {
     display: inline-block;
   }
   .navigation {
     /* Fix the navigation menu */
-    position: fixed; 
+    position: fixed;
     top: 70px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000; /* Ensure it's above other content */
-    background-color:  #333; 
+    background-color: #333;
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -627,34 +631,31 @@ margin-bottom: 10px;
     transform: translate(-50%, -50%);
     color: #353333; /* Text color */
 
-    font-size:clamp(2rem, 2vw , 2.3rem); 
+    font-size: clamp(2rem, 2vw, 2.3rem);
     font-weight: bold; /* Optional */
     border-radius: 10px;
     z-index: 0;
     font-family: sans-serif;
   }
- #logo {
+  #logo {
     position: absolute;
-    top : 3px;
+    top: 3px;
     left: 10px;
     width: 70px;
-  }  
-  #companyName{
-    position: absolute; 
+  }
+  #companyName {
+    position: absolute;
     top: 7px;
     left: 90px;
-    color: #FACE66;
+    color: #face66;
     z-index: 0;
-    font-size:clamp(1.3rem, 2vw , 2rem); 
+    font-size: clamp(1.3rem, 2vw, 2rem);
     font-family: "Sofia", sans-serif;
   }
-.section-footer {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  padding: 1rem;
-}
-
-
-
+  .section-footer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 1rem;
+  }
 }
