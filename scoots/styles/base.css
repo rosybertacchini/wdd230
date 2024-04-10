@@ -247,7 +247,7 @@ footer {
   margin-bottom: 10px;
 }
 .card-description {
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   line-height: 1.5;
 }
@@ -594,11 +594,16 @@ form input.submitBtn {
   #company {
     height: 44px; /* AQUI */
   }
-  main, #mainReservations, #mainContactus,    /* aqui */
+#mainReservations, #mainContactus,    /* aqui */
   #mainRentals{
     display: block;
     margin: 0 auto;
     margin-top:40px;
+  }
+  main{
+    display: block;
+    margin: 0 auto;
+    margin-top:0px;
   }
   main p {
     font-size: clamp(0.9rem, 2vw, 1.1rem);
