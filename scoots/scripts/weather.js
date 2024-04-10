@@ -33,8 +33,17 @@ const displayResults = (data) => {
 
     const closeButton = document.createElement("span");
     closeButton.innerHTML = "❌";
-    closeButton.addEventListener("click", () => showMaxtempDisapear());
+    closeButton.addEventListener("click", () => showMaxTempDisapear());
     showMaxtemp.appendChild(closeButton);
+
+    // to close -reserveNow discount % botton ******************************* 
+    const closeButtonReservNow = document.createElement("span");
+    closeButtonReservNow.innerHTML = "❌";
+    closeButtonReservNow.addEventListener("click", () => showReservNowDisapear());
+    // closeButtonReservNow.appendChild(closeButtonReservNow);
+    const reserveNow = document.querySelector("#reserveNow");
+    reserveNow.appendChild(closeButtonReservNow);
+    // ********************************************************************** 
 
     const feels_like = `${Math.round(data.main.feels_like)}&deg;C`;
     const humidity = `${Math.round(data.main.humidity)}%`;
@@ -58,9 +67,12 @@ const displayResults = (data) => {
   });
 };
 
-function showMaxtempDisapear() {
+function showMaxTempDisapear() {
   showMaxtemp.style.display = "none";
   weatherIcon.style.display = "none";
+}
+function showReservNowDisapear() {
+  reserveNow.style.display = "none";
 }
 
 function capitalizeEachWord(str) {

@@ -14,6 +14,7 @@
     <meta property="og:image" content="https://rosybertacchini.github.io/wdd230/scoots/images/heroImageMobile.webp" />
     <meta property="og:site_name" content="Student of BYUI" />
     <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
     <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css" />
     <link rel="icon" href="favicon.ico" />
@@ -25,7 +26,7 @@
                 <img id="logo" src="images/logo.webp" alt="Logo" />
                 <div id="companyName">Costal Scoot Rentals</div>
             </div>
-             <div id="phone"><i class="fa fa-phone" style="font-size:24px"></i> 987-987-987</div>
+             <div id="phone"><i class="fa fa-phone"></i> 987-987-987</div>
              <div id="weatherIcon-container"><img id="weatherIcon"  alt="Weather Icon" /><span id="current-maxTemp"></span></div>
             <button id="menu"></button>
         </div>
@@ -56,7 +57,7 @@
                           <legend>Please give us your comments</legend>
                           <label class="info"
                             >First Name*
-                            <input type="text" id="fname" name="fname"   />
+                            <input type="text" id="fname" name="fname"  required />
                           </label>
                           <label class="info"
                             >E-mail*
@@ -64,7 +65,7 @@
                               type="email"
                               id="email"
                               name="email"
-  
+                              required
                               pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/"
                               title="Please enter a valid email address"
                           /></label>
@@ -74,7 +75,7 @@
                               type="text" 
                               id="comments"
                               name="comments"
-                              
+                              required
                               >
                               </textarea>
                             </label>

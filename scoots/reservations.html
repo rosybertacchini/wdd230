@@ -14,10 +14,15 @@
     <meta property="og:image" content="https://rosybertacchini.github.io/wdd230/scoots/images/heroImageMobile.webp" />
     <meta property="og:site_name" content="Student of BYUI" />
     <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+
+
+
     <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css" />
     <link rel="icon" href="favicon.ico" />
 </head>
+
 <body>
     <header>
         <div id="company">
@@ -25,39 +30,123 @@
                 <img id="logo" src="images/logo.webp" alt="Logo" />
                 <div id="companyName">Costal Scoot Rentals</div>
             </div>
-             <div id="phone"><i class="fa fa-phone" style="font-size:24px"></i> 987-987-987</div>
-             <div id="weatherIcon-container"><img id="weatherIcon"  alt="Weather Icon" /><span id="current-maxTemp"></span></div>
+            <div id="phone"><i class="fa fa-phone"></i> 987-987-987</div>
+            <div id="weatherIcon-container"><img id="weatherIcon" alt="Weather Icon" /><span
+                    id="current-maxTemp"></span></div>
             <button id="menu"></button>
         </div>
         <nav class="navigation">
             <ul>
                 <ul>
-                    <li><a class="active" href="index.html"  >Home</a></li>
-                    <li><a href="rentals.html" >Rentals</a></li>
-                    <li><a href="reservations.html" >Reservations</a></li>
-                    <li><a href="contactus.html" >Contact Us</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
             </ul>
         </nav>
-      
+
     </header>
     <div id="reserveNow">Reserve now and get 15% off!</div>
-    <main id="mainRentals">
+    <main id="mainReservations">
         <div id="left-area">
             <div id="left-cards"></div>
         </div>
         <div id="central-area">
-            <h1>It is easy to reserve a Scoot</h1>
-           <br/>
-           <br/>
-           <br/>
+            <h1>Reserving a Scoot at Coastal Scoot Rentals couldn't be simpler</h1>
+            <br />
+            <span id="msgdiscount"></span>
+            <br />
+            <p>Before proceeding with your scooter rental, please review the following terms and conditions:</p>
+            <br />
+            <p>Rental Duration:</p>
+            <p> Your rental period begins on the selected start date and time and ends on the designated end date and
+                time.
+                Extension of the rental period is subject to availability and must be approved in advance by Coastal
+                Scoot Rentals.</p>
+            <p>Secure Deposit:</p>
+            <p>A security deposit of $200 is required upon rental to cover potential damages or losses.
+                The deposit will be refunded upon the safe return of the scooter, minus any applicable deductions.</p>
+            <p>Renter Responsibilities:</p>
+            <p>Operate the scooter responsibly, adhering to all local traffic laws and regulations.
+                Assume responsibility for any damages caused by misuse or negligence.
+                Do not sublease or transfer the scooter without prior consent from Coastal Scoot Rentals.</p>
+            <p>Insurance:</p>
+            <p>Basic insurance coverage is provided with the rental.
+                Additional insurance options are available for purchase to reduce liability in case of accidents or
+                damages.</p>
+            <div id="reservationFormContainer">
+                <form id="reservationForm" method="get" action="action="thankyouReservations.html">
+                    <div id="dates">
+                        <label class="info">Pick Up Date*
+                            <input type="date" id="pickup_date" name="pickup_date" required />
+                        </label>
+                        <label class="info">Return Date*
+                            <input type="date" id="return_date" name="return_date" required />
+                        </label>
+                    </div>
+                    <label class="info">Type
+                        <select name="subject">
+                            <option value="">Select your Scoot</option>
+                            <optgroup label="Honda Motor Scooter">
+                                <option value="metro-scooter">Metro Scooter</option>
+                                <option value="dio-scooter">Dio Scooter</option>
+                                <option value="pcx150-scooter">PCX150 Scooter</option>
+                            </optgroup>
+                            <optgroup label="Honda Side By Side AVT">
+                                <option value="pioneer-1000	">Pioneer 1000</option>
+                            </optgroup>
+                            <optgroup label="Jepps">
+                                <option value="wrangler-4-door">Wrangler - 4 door</option>
+                                <option value="wrangler-4-door">Wrangler - 2 door</option>
+                            </optgroup>
 
+                        </select>
+                        <br />
+
+                        <br />
+                    </label>
+                    <label class="info">First Name*
+                        <input type="text" id="fname" name="fname" required />
+                    </label>
+                    <label class="info">Last Name* <input type="text" id="lname" name="lname" required />
+                    </label>
+                    <label class="info">E-mail*
+                        <input type="email" id="email" name="email" required
+                            pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/"
+                            title="Please enter a valid email address" /></label>
+                    <label class="info">Mobile*
+                        <input type="tel" id="phone1" name="phone1" required placeholder="1119992222" />
+                    </label>
+                    <label class="info">Country of Residence*
+                        <input type="text" id="country" name="country" required />
+                    </label>
+                    <label class="info">Please select Location to Drop-off
+                        <select name="subject">
+                            <option value="">Select Location </option>
+                            <option value="location-ferry-dock">Playa del Carmen-Cozumel Ferry dock</option>
+                            <option value="location-puerta-maya">Terminal Puerta Maya</option>
+                        </select>
+                    </label>
+                    </fieldset>
+                    <label class="info" for="accommodations">Please leave any comments y you have any accommodations need
+                        <textarea id="accommodations" name="accommodations"></textarea>
+                    </label>
+                    <input type="hidden" id="timestampInput" name="timestampInput" value="" />
+                    <input type="submit" value="Make Reservation" class="submitBtn" />
+                </form>
+                <br />
+            </div>
+        </div>
         </div>
         <div id="right-area">
             <div id="right-cards">
-                <a href="https://facebook.com" target="_blanck"><img src="images/facebookIcon.webp" alt="Facebook Icon" loading="lazy"> </a>
-                <a href="https://twitter.com/" target="_blanck"><img src="images/twitterIcon.webp"  alt="Twitter Icon" loading="lazy"> </a>
-                <a href="https://youtube.com/" target="_blanck"><img src="images/youtubeIcon.webp" alt="Youtube Icon" loading="lazy"> </a>
+                <a href="https://facebook.com" target="_blanck"><img src="images/facebookIcon.webp" alt="Facebook Icon"
+                        loading="lazy"> </a>
+                <a href="https://twitter.com/" target="_blanck"><img src="images/twitterIcon.webp" alt="Twitter Icon"
+                        loading="lazy"> </a>
+                <a href="https://youtube.com/" target="_blanck"><img src="images/youtubeIcon.webp" alt="Youtube Icon"
+                        loading="lazy"> </a>
             </div>
         </div>
     </main>
@@ -101,14 +190,15 @@
                 <a href="#">Available on the App Store</a>
                 <a href="#">My Costal Scoter App</a>
             </section>
-
         </section>
 
     </footer>
     </footer>
     <script src="scripts/base.js"></script>
     <script src="scripts/weather.js"></script>
-    <script src="scripts/rentals.js"></script>
+
+
+
 </body>
 
 </html>

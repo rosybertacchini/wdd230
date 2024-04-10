@@ -15,7 +15,7 @@ function displayScooterTable(scooters) {
 
 
     // Clear existing table content
-    table.innerHTML = "";
+    table.innerHTML = " ";
 
     // Counter to track even/odd rows for alternating colors
     let rowCounter = 0;

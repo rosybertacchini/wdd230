@@ -7,39 +7,40 @@
     <title>Rentals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rosy Bertacchini" />
-    <meta name="description"
-        content="List of all Vihicals models available in Costal Scoot Rentals." />
+    <meta name="description" content="List of all Vihicals models available in Costal Scoot Rentals." />
     <meta property="og:title" content="Best Scooters Rentals in Cozumel beach" />
     <meta property="og:url" content="https://rosybertacchini.github.io/wdd230/scoots" />
     <meta property="og:image" content="https://rosybertacchini.github.io/wdd230/scoots/images/heroImageMobile.webp" />
     <meta property="og:site_name" content="Student of BYUI" />
     <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
     <link rel="stylesheet" type="text/css" media="screen" href="styles/base.css" />
     <link rel="icon" href="favicon.ico" />
 </head>
+
 <body>
     <header>
         <div id="company">
             <div id="box-company">
-                <img id="logo" src="images/logo.webp" alt="Logo" />
+
+                <!-- <img id="logo" src="images/logo.webp" alt="Logo" /> -->
                 <div id="companyName">Costal Scoot Rentals</div>
             </div>
-             <div id="phone"><i class="fa fa-phone" style="font-size:24px"></i> 987-987-987</div>
-             <div id="weatherIcon-container"><img id="weatherIcon"  alt="Weather Icon" /><span id="current-maxTemp"></span></div>
+            <div id="phone"><i class="fa fa-phone"></i> 987-987-987</div>
+            <div id="weatherIcon-container"><img src="" id="weatherIcon" alt="Weather Icon" /><span
+                    id="current-maxTemp"></span></div>
             <button id="menu"></button>
         </div>
         <nav class="navigation">
-            <ul>
                 <ul>
-                    <li><a class="active" href="index.html"  >Home</a></li>
-                    <li><a href="rentals.html" >Rentals</a></li>
-                    <li><a href="reservations.html" >Reservations</a></li>
-                    <li><a href="contactus.html" >Contact Us</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
-            </ul>
+
         </nav>
-      
     </header>
     <div id="reserveNow">Reserve now and get 15% off!</div>
     <main id="mainRentals">
@@ -48,20 +49,23 @@
         </div>
         <div id="central-area">
             <h1>Select your next Scooter!</h1>
-           <br/>
-           <br/>
-           <br/>
+            <br />
+            <br />
+            <br />
             <div id="section-table">
-                <table id="scooterTable" >
+                <table id="scooterTable">
                 </table>
             </div>
             <div id="section-cards"> </div>
         </div>
         <div id="right-area">
             <div id="right-cards">
-                <a href="https://facebook.com" target="_blanck"><img src="images/facebookIcon.webp" alt="Facebook Icon" loading="lazy"> </a>
-                <a href="https://twitter.com/" target="_blanck"><img src="images/twitterIcon.webp"  alt="Twitter Icon" loading="lazy"> </a>
-                <a href="https://youtube.com/" target="_blanck"><img src="images/youtubeIcon.webp" alt="Youtube Icon" loading="lazy"> </a>
+                <a href="https://facebook.com" target="_blank"><img src="images/facebookIcon.webp" alt="Facebook Icon"
+                        loading="lazy"> </a>
+                <a href="https://twitter.com/" target="_blank"><img src="images/twitterIcon.webp" alt="Twitter Icon"
+                        loading="lazy"> </a>
+                <a href="https://youtube.com/" target="_blank"><img src="images/youtubeIcon.webp" alt="Youtube Icon"
+                        loading="lazy"> </a>
             </div>
         </div>
     </main>
@@ -76,12 +80,10 @@
             </section>
             <section class="footer-subSection">
                 <h3>Clients</h3>
-
                 <a href="#">Customer service</a>
                 <a href="#"> Locate your store</a>
                 <a href="#">Coverage map</a>
                 <a href="#">Protection Insurance</a>
-
             </section>
             <section class="footer-subSection">
                 <h3>Legal</h3>
@@ -89,7 +91,6 @@
                 <a href="#">Notice of Privacy</a>
                 <a href="#">Ethics and compliance</a>
                 <a href="#">Accessibility</a>
-
             </section>
             <section class="footer-subSection">
                 <h3>Us</h3>
@@ -98,17 +99,13 @@
                 <a href="#">News</a>
                 <a href="#">Weather</a>
             </section>
-
             <section class="footer-subSection">
                 <h3>Costal Scooter App</h3>
                 <a href="#">Available on Play Stores</a>
                 <a href="#">Available on the App Store</a>
                 <a href="#">My Costal Scoter App</a>
             </section>
-
         </section>
-
-    </footer>
     </footer>
     <script src="scripts/base.js"></script>
     <script src="scripts/weather.js"></script>
