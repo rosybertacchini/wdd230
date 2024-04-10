@@ -36,18 +36,16 @@
             <button id="menu"></button>
         </div>
         <nav class="navigation">
-            <ul>
                 <ul>
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="rentals.html">Rentals</a></li>
                     <li><a href="reservations.html">Reservations</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
-            </ul>
         </nav>
 
     </header>
-    <div id="reserveNow">Reserve now and get 15% off!</div>
+    <!-- <div id="reserveNow">Reserve now and get 15% off!</div> -->
     <main id="mainReservations">
         <div id="left-area">
             <div id="left-cards"></div>
@@ -76,7 +74,7 @@
                 Additional insurance options are available for purchase to reduce liability in case of accidents or
                 damages.</p>
             <div id="reservationFormContainer">
-                <form id="reservationForm" method="get" action="action="thankyouReservations.html">
+                <form id="reservationForm" method="get" action="thankyouReservations.html">
                     <div id="dates">
                         <label class="info">Pick Up Date*
                             <input type="date" id="pickup_date" name="pickup_date" required />
@@ -128,24 +126,24 @@
                             <option value="location-puerta-maya">Terminal Puerta Maya</option>
                         </select>
                     </label>
-                    </fieldset>
+
                     <label class="info" for="accommodations">Please leave any comments y you have any accommodations need
                         <textarea id="accommodations" name="accommodations"></textarea>
                     </label>
-                    <input type="hidden" id="timestampInput" name="timestampInput" value="" />
+                    <!-- <input type="hidden" id="timestampInput" name="timestampInput" value="" /> -->
                     <input type="submit" value="Make Reservation" class="submitBtn" />
                 </form>
                 <br />
             </div>
         </div>
-        </div>
+
         <div id="right-area">
             <div id="right-cards">
-                <a href="https://facebook.com" target="_blanck"><img src="images/facebookIcon.webp" alt="Facebook Icon"
+                <a href="https://facebook.com" target="_blank"><img src="images/facebookIcon.webp" alt="Facebook Icon"
                         loading="lazy"> </a>
-                <a href="https://twitter.com/" target="_blanck"><img src="images/twitterIcon.webp" alt="Twitter Icon"
+                <a href="https://twitter.com/" target="_blank"><img src="images/twitterIcon.webp" alt="Twitter Icon"
                         loading="lazy"> </a>
-                <a href="https://youtube.com/" target="_blanck"><img src="images/youtubeIcon.webp" alt="Youtube Icon"
+                <a href="https://youtube.com/" target="_blank"><img src="images/youtubeIcon.webp" alt="Youtube Icon"
                         loading="lazy"> </a>
             </div>
         </div>
@@ -193,12 +191,8 @@
         </section>
 
     </footer>
-    </footer>
     <script src="scripts/base.js"></script>
-    <script src="scripts/weather.js"></script>
-
-
-
+    <script src="scripts/weatherReservations.js"></script>
 </body>
 
 </html>
