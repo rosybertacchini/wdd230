@@ -61,7 +61,7 @@ main {
  
 }
 main p {
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-size: clamp(0.1rem, 2vw, 1.2rem);
 }
 #left-area,
 #right-area {
