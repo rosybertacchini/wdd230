@@ -1,3 +1,5 @@
+<!-- DEBES CREAR LOS ELEMENTOS DE <img>  en Javascript PARA ELIMINAR LOS DOS ERRORES DEl HTML -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,23 +33,21 @@
             <button id="menu"></button>
         </div>
         <nav class="navigation">
-            <ul>
                 <ul>
                     <li><a class="active" href="index.html"  >Home</a></li>
                     <li><a href="rentals.html" >Rentals</a></li>
                     <li><a href="reservations.html" >Reservations</a></li>
                     <li><a href="contactus.html" >Contact Us</a></li>
                 </ul>
-            </ul>
         </nav>
         <div id="header-container">
             <picture>
                 <!-- For desktop -->
-                <source media="(min-width: 1024px)" srcset="images/heroImage1920.webp" alt="Large Hero Image" />
+                <source media="(min-width: 1024px)" srcset="images/heroImage1920.webp"/>
                 <!-- For tablets -->
-                <source media="(min-width: 768px)"  srcset="images/heroImage800.webp"  alt="Middiam Hero Image" />
+                <source media="(min-width: 768px)"  srcset="images/heroImage800.webp"   />
                 <!-- For mobile -->
-                <img srcset="images/heroImageTallMobile.webp" alt="Samll Hero Image" />
+                <img srcset="images/heroImageTallMobile.webp" alt="Scooter in Mobile"/>
             </picture>
         </div>
         <div id="slogan">Ride the Waves of Fun in Cozumel !</div>
@@ -125,7 +125,6 @@
 
         </section>
 
-    </footer>
     </footer>
     <script src="scripts/discount.js"></script>
     <script src="scripts/base.js"></script>
