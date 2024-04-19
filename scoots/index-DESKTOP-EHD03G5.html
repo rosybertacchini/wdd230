@@ -27,7 +27,8 @@
                 <div id="companyName">Costal Scoot Rentals</div>
             </div>
              <div id="phone"><i class="fa fa-phone" ></i> 987-987-987</div>
-             <div id="weatherIcon-container"><img id="weatherIcon"  alt="Weather Icon" /><span id="current-maxTemp"></span></div>
+             <div id="weatherIcon-container"></div>
+             <!-- <div id="weatherIcon-container"><img id="weatherIcon"  alt="Weather Icon" /><span id="current-maxTemp"></span></div> -->
             <button id="menu"></button>
         </div>
         <nav class="navigation">
@@ -42,18 +43,20 @@
         </nav>
         <div id="header-container">
             <picture>
-                <!-- For desktop -->
-                <source media="(min-width: 1024px)" srcset="images/heroImage1920.webp" alt="Large Hero Image" />
-                <!-- For tablets -->
-                <source media="(min-width: 768px)"  srcset="images/heroImage800.webp"  alt="Middiam Hero Image" />
-                <!-- For mobile -->
-                <img srcset="images/heroImageTallMobile.webp" alt="Samll Hero Image" />
+                <!-- Use the small image for mobile devices -->
+                <source class="heroImage" media="(max-width: 375px)" srcset="images/pixlr-tallAspect.webp"
+                    alt="Samll Hero Image" />
+                <!-- Use the large image for larger screens -->
+                <source class="heroImage" media="(max-width:500)" srcset="images/heroImage1200.webp"
+                    alt="Middiam Hero Image" />
+                <!-- Fallback image for browsers that do not support the <picture> element -->
+                <img class="heroImage" src="images/heroImage1920.webp" alt="Large Hero Image" />
             </picture>
         </div>
         <div id="slogan">Ride the Waves of Fun in Cozumel !</div>
     </header>
     <div id="reserveNow">Reserve now and get 15% off!</div>
-    <main id="main">
+    <main>
         <div id="left-area">
             <div id="left-cards"></div>
         </div>
@@ -75,9 +78,9 @@
         </div>
         <div id="right-area">
             <div id="right-cards">
-                <a href="https://facebook.com" target="_blank"><img src="images/facebookIcon.webp" alt="Facebook Icon" loading="lazy"> </a>
-                <a href="https://twitter.com/" target="_blank"><img src="images/twitterIcon.webp"  alt="Twitter Icon" loading="lazy"> </a>
-                <a href="https://youtube.com/" target="_blank"><img src="images/youtubeIcon.webp" alt="Youtube Icon" loading="lazy"> </a>
+                <a href="https://facebook.com" target="_blanck"><img src="images/facebookIcon.webp" alt="Facebook Icon" loading="lazy"> </a>
+                <a href="https://twitter.com/" target="_blanck"><img src="images/twitterIcon.webp"  alt="Twitter Icon" loading="lazy"> </a>
+                <a href="https://youtube.com/" target="_blanck"><img src="images/youtubeIcon.webp" alt="Youtube Icon" loading="lazy"> </a>
             </div>
         </div>
     </main>
